@@ -8,6 +8,10 @@ Development64/
 Release32/
 Release64/
 build/
+RenderDocExtract/Output/
+RenderDocExtract/Logs/
+RenderDocExtract/Temp/
+RenderDocExtract/Tests/
 build-*/
 /compile_commands.json
 .cache/

@@ -1,0 +1,935 @@
+{
+  "version": 2,
+  "source": "D:/PTGame/Docs/GBuffer_Layout_Analysis.md",
+  "notes": [
+    "UE5 Legacy GBuffer variants derived from FGBufferParams: bHasVelocity, bHasTangent, bHasPrecShadowFactor.",
+    "Format names use RenderDoc ResourceFormat.Name() strings. Each RT slot can list alternatives for UE precision/platform variants.",
+    "RT0 Lighting/SceneColor allows R16G16B16A16_FLOAT because this project capture uses RGBA16F scene color instead of R11G11B10.",
+    "Velocity RT follows updated 2026-06-07 docs: shader outputs float4, RG16 targets keep XY only, RGBA16_UNORM targets pack XY + DeviceZ delta high/low bits and low-bit flags.",
+    "channel_schemas defines queryable per-RT channel semantics and unpack rules. Layout slots reference schemas by semantic key."
+  ],
+  "layouts": [
+    {
+      "layout_id": "ue5_legacy_base_no_velocity_no_tangent_no_precshadow",
+      "description": "UE5 legacy deferred base GBuffer: no velocity, no tangent, no precomputed shadow factor.",
+      "params": {
+        "bHasVelocity": false,
+        "bHasTangent": false,
+        "bHasPrecShadowFactor": false
+      },
+      "rt_count": 5,
+      "render_targets": [
+        {
+          "index": 0,
+          "name": "Lighting",
+          "semantic": "SceneColor",
+          "formats": [
+            "R11G11B10_FLOAT",
+            "B10G11R11_UFLOAT",
+            "R16G16B16A16_FLOAT"
+          ],
+          "channel_schema": "SceneColor"
+        },
+        {
+          "index": 1,
+          "name": "GBufferA",
+          "semantic": "WorldNormal_PerObjectData",
+          "formats": [
+            "R10G10B10A2_UNORM",
+            "R16G16B16A16_FLOAT",
+            "B8G8R8A8_UNORM"
+          ],
+          "channel_schema": "WorldNormal_PerObjectData"
+        },
+        {
+          "index": 2,
+          "name": "GBufferB",
+          "semantic": "Metallic_Specular_Roughness_ShadingModel",
+          "formats": [
+            "B8G8R8A8_UNORM",
+            "R16G16B16A16_FLOAT"
+          ],
+          "channel_schema": "Metallic_Specular_Roughness_ShadingModel"
+        },
+        {
+          "index": 3,
+          "name": "GBufferC",
+          "semantic": "BaseColor_AO_IndirectIrradiance",
+          "formats": [
+            "B8G8R8A8_SRGB",
+            "R16G16B16A16_FLOAT"
+          ],
+          "channel_schema": "BaseColor_AO_IndirectIrradiance"
+        },
+        {
+          "index": 4,
+          "name": "GBufferD",
+          "semantic": "CustomData",
+          "formats": [
+            "B8G8R8A8_UNORM",
+            "R8G8B8A8_UNORM"
+          ],
+          "channel_schema": "CustomData"
+        }
+      ]
+    },
+    {
+      "layout_id": "ue5_legacy_base_no_velocity_no_tangent_precshadow",
+      "description": "UE5 legacy deferred base GBuffer with precomputed shadow factor.",
+      "params": {
+        "bHasVelocity": false,
+        "bHasTangent": false,
+        "bHasPrecShadowFactor": true
+      },
+      "rt_count": 6,
+      "render_targets": [
+        {
+          "index": 0,
+          "name": "Lighting",
+          "semantic": "SceneColor",
+          "formats": [
+            "R11G11B10_FLOAT",
+            "B10G11R11_UFLOAT",
+            "R16G16B16A16_FLOAT"
+          ],
+          "channel_schema": "SceneColor"
+        },
+        {
+          "index": 1,
+          "name": "GBufferA",
+          "semantic": "WorldNormal_PerObjectData",
+          "formats": [
+            "R10G10B10A2_UNORM",
+            "R16G16B16A16_FLOAT",
+            "B8G8R8A8_UNORM"
+          ],
+          "channel_schema": "WorldNormal_PerObjectData"
+        },
+        {
+          "index": 2,
+          "name": "GBufferB",
+          "semantic": "Metallic_Specular_Roughness_ShadingModel",
+          "formats": [
+            "B8G8R8A8_UNORM",
+            "R16G16B16A16_FLOAT"
+          ],
+          "channel_schema": "Metallic_Specular_Roughness_ShadingModel"
+        },
+        {
+          "index": 3,
+          "name": "GBufferC",
+          "semantic": "BaseColor_AO_IndirectIrradiance",
+          "formats": [
+            "B8G8R8A8_SRGB",
+            "R16G16B16A16_FLOAT"
+          ],
+          "channel_schema": "BaseColor_AO_IndirectIrradiance"
+        },
+        {
+          "index": 4,
+          "name": "GBufferD",
+          "semantic": "CustomData",
+          "formats": [
+            "B8G8R8A8_UNORM",
+            "R8G8B8A8_UNORM"
+          ],
+          "channel_schema": "CustomData"
+        },
+        {
+          "index": 5,
+          "name": "GBufferE",
+          "semantic": "PrecomputedShadowFactors",
+          "formats": [
+            "B8G8R8A8_UNORM",
+            "R8G8B8A8_UNORM"
+          ],
+          "channel_schema": "PrecomputedShadowFactors"
+        }
+      ]
+    },
+    {
+      "layout_id": "ue5_legacy_velocity_no_precshadow",
+      "description": "UE5 legacy deferred GBuffer with velocity RT and without precomputed shadow factor.",
+      "params": {
+        "bHasVelocity": true,
+        "bHasTangent": false,
+        "bHasPrecShadowFactor": false
+      },
+      "rt_count": 6,
+      "render_targets": [
+        {
+          "index": 0,
+          "name": "Lighting",
+          "semantic": "SceneColor",
+          "formats": [
+            "R11G11B10_FLOAT",
+            "B10G11R11_UFLOAT",
+            "R16G16B16A16_FLOAT"
+          ],
+          "channel_schema": "SceneColor"
+        },
+        {
+          "index": 1,
+          "name": "GBufferA",
+          "semantic": "WorldNormal_PerObjectData",
+          "formats": [
+            "R10G10B10A2_UNORM",
+            "R16G16B16A16_FLOAT",
+            "B8G8R8A8_UNORM"
+          ],
+          "channel_schema": "WorldNormal_PerObjectData"
+        },
+        {
+          "index": 2,
+          "name": "GBufferB",
+          "semantic": "Metallic_Specular_Roughness_ShadingModel",
+          "formats": [
+            "B8G8R8A8_UNORM",
+            "R16G16B16A16_FLOAT"
+          ],
+          "channel_schema": "Metallic_Specular_Roughness_ShadingModel"
+        },
+        {
+          "index": 3,
+          "name": "GBufferC",
+          "semantic": "BaseColor_AO_IndirectIrradiance",
+          "formats": [
+            "B8G8R8A8_SRGB",
+            "R16G16B16A16_FLOAT"
+          ],
+          "channel_schema": "BaseColor_AO_IndirectIrradiance"
+        },
+        {
+          "index": 4,
+          "name": "Velocity",
+          "semantic": "Velocity",
+          "formats": [
+            "R16G16_UNORM",
+            "R16G16B16A16_UNORM",
+            "R16G16_FLOAT",
+            "R16G16B16A16_FLOAT"
+          ],
+          "channel_schema": "Velocity",
+          "shader_output_type": "float4 ENCODED_VELOCITY_TYPE; RG formats discard B/A in hardware; RGBA16_UNORM stores depth delta packed in B/A."
+        },
+        {
+          "index": 5,
+          "name": "GBufferD",
+          "semantic": "CustomData",
+          "formats": [
+            "B8G8R8A8_UNORM",
+            "R8G8B8A8_UNORM"
+          ],
+          "channel_schema": "CustomData"
+        }
+      ]
+    },
+    {
+      "layout_id": "ue5_legacy_velocity_precshadow",
+      "description": "UE5 legacy deferred GBuffer with velocity RT and precomputed shadow factor.",
+      "params": {
+        "bHasVelocity": true,
+        "bHasTangent": false,
+        "bHasPrecShadowFactor": true
+      },
+      "rt_count": 7,
+      "render_targets": [
+        {
+          "index": 0,
+          "name": "Lighting",
+          "semantic": "SceneColor",
+          "formats": [
+            "R11G11B10_FLOAT",
+            "B10G11R11_UFLOAT",
+            "R16G16B16A16_FLOAT"
+          ],
+          "channel_schema": "SceneColor"
+        },
+        {
+          "index": 1,
+          "name": "GBufferA",
+          "semantic": "WorldNormal_PerObjectData",
+          "formats": [
+            "R10G10B10A2_UNORM",
+            "R16G16B16A16_FLOAT",
+            "B8G8R8A8_UNORM"
+          ],
+          "channel_schema": "WorldNormal_PerObjectData"
+        },
+        {
+          "index": 2,
+          "name": "GBufferB",
+          "semantic": "Metallic_Specular_Roughness_ShadingModel",
+          "formats": [
+            "B8G8R8A8_UNORM",
+            "R16G16B16A16_FLOAT"
+          ],
+          "channel_schema": "Metallic_Specular_Roughness_ShadingModel"
+        },
+        {
+          "index": 3,
+          "name": "GBufferC",
+          "semantic": "BaseColor_AO_IndirectIrradiance",
+          "formats": [
+            "B8G8R8A8_SRGB",
+            "R16G16B16A16_FLOAT"
+          ],
+          "channel_schema": "BaseColor_AO_IndirectIrradiance"
+        },
+        {
+          "index": 4,
+          "name": "Velocity",
+          "semantic": "Velocity",
+          "formats": [
+            "R16G16_UNORM",
+            "R16G16B16A16_UNORM",
+            "R16G16_FLOAT",
+            "R16G16B16A16_FLOAT"
+          ],
+          "channel_schema": "Velocity",
+          "shader_output_type": "float4 ENCODED_VELOCITY_TYPE; RG formats discard B/A in hardware; RGBA16_UNORM stores depth delta packed in B/A."
+        },
+        {
+          "index": 5,
+          "name": "GBufferD",
+          "semantic": "CustomData",
+          "formats": [
+            "B8G8R8A8_UNORM",
+            "R8G8B8A8_UNORM"
+          ],
+          "channel_schema": "CustomData"
+        },
+        {
+          "index": 6,
+          "name": "GBufferE",
+          "semantic": "PrecomputedShadowFactors",
+          "formats": [
+            "B8G8R8A8_UNORM",
+            "R8G8B8A8_UNORM"
+          ],
+          "channel_schema": "PrecomputedShadowFactors"
+        }
+      ]
+    },
+    {
+      "layout_id": "ue5_legacy_tangent_no_precshadow",
+      "description": "UE5 legacy deferred GBuffer with tangent/anisotropy RT and without precomputed shadow factor.",
+      "params": {
+        "bHasVelocity": false,
+        "bHasTangent": true,
+        "bHasPrecShadowFactor": false
+      },
+      "rt_count": 6,
+      "render_targets": [
+        {
+          "index": 0,
+          "name": "Lighting",
+          "semantic": "SceneColor",
+          "formats": [
+            "R11G11B10_FLOAT",
+            "B10G11R11_UFLOAT",
+            "R16G16B16A16_FLOAT"
+          ],
+          "channel_schema": "SceneColor"
+        },
+        {
+          "index": 1,
+          "name": "GBufferA",
+          "semantic": "WorldNormal_PerObjectData",
+          "formats": [
+            "R10G10B10A2_UNORM",
+            "R16G16B16A16_FLOAT",
+            "B8G8R8A8_UNORM"
+          ],
+          "channel_schema": "WorldNormal_PerObjectData"
+        },
+        {
+          "index": 2,
+          "name": "GBufferB",
+          "semantic": "Metallic_Specular_Roughness_ShadingModel",
+          "formats": [
+            "B8G8R8A8_UNORM",
+            "R16G16B16A16_FLOAT"
+          ],
+          "channel_schema": "Metallic_Specular_Roughness_ShadingModel"
+        },
+        {
+          "index": 3,
+          "name": "GBufferC",
+          "semantic": "BaseColor_AO_IndirectIrradiance",
+          "formats": [
+            "B8G8R8A8_SRGB",
+            "R16G16B16A16_FLOAT"
+          ],
+          "channel_schema": "BaseColor_AO_IndirectIrradiance"
+        },
+        {
+          "index": 4,
+          "name": "GBufferF",
+          "semantic": "WorldTangent_Anisotropy",
+          "formats": [
+            "B8G8R8A8_UNORM",
+            "R8G8B8A8_UNORM"
+          ],
+          "channel_schema": "WorldTangent_Anisotropy"
+        },
+        {
+          "index": 5,
+          "name": "GBufferD",
+          "semantic": "CustomData",
+          "formats": [
+            "B8G8R8A8_UNORM",
+            "R8G8B8A8_UNORM"
+          ],
+          "channel_schema": "CustomData"
+        }
+      ]
+    },
+    {
+      "layout_id": "ue5_legacy_tangent_precshadow",
+      "description": "UE5 legacy deferred GBuffer with tangent/anisotropy RT and precomputed shadow factor.",
+      "params": {
+        "bHasVelocity": false,
+        "bHasTangent": true,
+        "bHasPrecShadowFactor": true
+      },
+      "rt_count": 7,
+      "render_targets": [
+        {
+          "index": 0,
+          "name": "Lighting",
+          "semantic": "SceneColor",
+          "formats": [
+            "R11G11B10_FLOAT",
+            "B10G11R11_UFLOAT",
+            "R16G16B16A16_FLOAT"
+          ],
+          "channel_schema": "SceneColor"
+        },
+        {
+          "index": 1,
+          "name": "GBufferA",
+          "semantic": "WorldNormal_PerObjectData",
+          "formats": [
+            "R10G10B10A2_UNORM",
+            "R16G16B16A16_FLOAT",
+            "B8G8R8A8_UNORM"
+          ],
+          "channel_schema": "WorldNormal_PerObjectData"
+        },
+        {
+          "index": 2,
+          "name": "GBufferB",
+          "semantic": "Metallic_Specular_Roughness_ShadingModel",
+          "formats": [
+            "B8G8R8A8_UNORM",
+            "R16G16B16A16_FLOAT"
+          ],
+          "channel_schema": "Metallic_Specular_Roughness_ShadingModel"
+        },
+        {
+          "index": 3,
+          "name": "GBufferC",
+          "semantic": "BaseColor_AO_IndirectIrradiance",
+          "formats": [
+            "B8G8R8A8_SRGB",
+            "R16G16B16A16_FLOAT"
+          ],
+          "channel_schema": "BaseColor_AO_IndirectIrradiance"
+        },
+        {
+          "index": 4,
+          "name": "GBufferF",
+          "semantic": "WorldTangent_Anisotropy",
+          "formats": [
+            "B8G8R8A8_UNORM",
+            "R8G8B8A8_UNORM"
+          ],
+          "channel_schema": "WorldTangent_Anisotropy"
+        },
+        {
+          "index": 5,
+          "name": "GBufferD",
+          "semantic": "CustomData",
+          "formats": [
+            "B8G8R8A8_UNORM",
+            "R8G8B8A8_UNORM"
+          ],
+          "channel_schema": "CustomData"
+        },
+        {
+          "index": 6,
+          "name": "GBufferE",
+          "semantic": "PrecomputedShadowFactors",
+          "formats": [
+            "B8G8R8A8_UNORM",
+            "R8G8B8A8_UNORM"
+          ],
+          "channel_schema": "PrecomputedShadowFactors"
+        }
+      ]
+    }
+  ],
+  "channel_schemas": {
+    "SceneColor": {
+      "description": "Lighting / SceneColor HDR output, usually accumulated lighting or emissive depending path.",
+      "channels": {
+        "R": {
+          "name": "SceneColor.R",
+          "meaning": "HDR linear scene color red, pre-exposed",
+          "decode": "identity",
+          "material_properties": []
+        },
+        "G": {
+          "name": "SceneColor.G",
+          "meaning": "HDR linear scene color green, pre-exposed",
+          "decode": "identity",
+          "material_properties": []
+        },
+        "B": {
+          "name": "SceneColor.B",
+          "meaning": "HDR linear scene color blue, pre-exposed",
+          "decode": "identity",
+          "material_properties": []
+        },
+        "A": {
+          "name": "Unused_or_alpha",
+          "meaning": "Usually unused for R11G11B10; present if RGBA16F fallback",
+          "decode": "identity",
+          "material_properties": []
+        }
+      }
+    },
+    "WorldNormal_PerObjectData": {
+      "description": "GBufferA: encoded world normal plus per-object 2-bit data in default A2B10G10R10 layout.",
+      "channels": {
+        "R": {
+          "name": "WorldNormal.X",
+          "meaning": "Encoded world normal X",
+          "decode": "encoded_normal_component",
+          "formula": "decoded = encoded * 2 - 1",
+          "material_properties": [
+            "Normal"
+          ]
+        },
+        "G": {
+          "name": "WorldNormal.Y",
+          "meaning": "Encoded world normal Y",
+          "decode": "encoded_normal_component",
+          "formula": "decoded = encoded * 2 - 1",
+          "material_properties": [
+            "Normal"
+          ]
+        },
+        "B": {
+          "name": "WorldNormal.Z",
+          "meaning": "Encoded world normal Z",
+          "decode": "encoded_normal_component",
+          "formula": "decoded = encoded * 2 - 1",
+          "material_properties": [
+            "Normal"
+          ]
+        },
+        "A": {
+          "name": "PerObjectGBufferData",
+          "meaning": "Packed per-object flags",
+          "decode": "per_object_gbuffer_data_2bit",
+          "packed_bits": {
+            "0": "CastContactShadow",
+            "1": "HasDynamicIndirectShadowCasterRepresentation"
+          },
+          "material_properties": []
+        }
+      }
+    },
+    "Metallic_Specular_Roughness_ShadingModel": {
+      "description": "GBufferB: metallic/specular/roughness and packed shading model/selective output mask.",
+      "channels": {
+        "R": {
+          "name": "Metallic",
+          "meaning": "Metallic factor [0,1]",
+          "decode": "identity",
+          "material_properties": [
+            "Metallic"
+          ]
+        },
+        "G": {
+          "name": "Specular",
+          "meaning": "Specular factor [0,1], default dielectric F0 around 0.5",
+          "decode": "identity",
+          "material_properties": [
+            "Specular"
+          ]
+        },
+        "B": {
+          "name": "Roughness",
+          "meaning": "Roughness factor [0,1]",
+          "decode": "identity",
+          "material_properties": [
+            "Roughness"
+          ]
+        },
+        "A": {
+          "name": "ShadingModelID_SelectiveOutputMask",
+          "meaning": "Low 4 bits ShadingModelID, high 4 bits selective output flags",
+          "decode": "gbuffer_b_alpha_packed",
+          "packed_bits": {
+            "0-3": "ShadingModelID",
+            "4": "HAS_ANISOTROPY_MASK",
+            "5": "SKIP_PRECSHADOW_MASK",
+            "6": "ZERO_PRECSHADOW_MASK_or_IS_FIRST_PERSON_MASK",
+            "7": "SKIP_VELOCITY_MASK"
+          },
+          "material_properties": [
+            "ShadingModelID"
+          ]
+        }
+      }
+    },
+    "BaseColor_AO_IndirectIrradiance": {
+      "description": "GBufferC: base color plus AO/indirect irradiance in alpha. RGB is sRGB in default path.",
+      "channels": {
+        "R": {
+          "name": "BaseColor.R",
+          "meaning": "Base color red, sRGB-encoded in default RGBA8_sRGB",
+          "decode": "srgb_to_linear_optional",
+          "material_properties": [
+            "BaseColor"
+          ]
+        },
+        "G": {
+          "name": "BaseColor.G",
+          "meaning": "Base color green, sRGB-encoded in default RGBA8_sRGB",
+          "decode": "srgb_to_linear_optional",
+          "material_properties": [
+            "BaseColor"
+          ]
+        },
+        "B": {
+          "name": "BaseColor.B",
+          "meaning": "Base color blue, sRGB-encoded in default RGBA8_sRGB",
+          "decode": "srgb_to_linear_optional",
+          "material_properties": [
+            "BaseColor"
+          ]
+        },
+        "A": {
+          "name": "IndirectIrradiance_x_AO_or_AO",
+          "meaning": "Usually log2 encoded IndirectIrradiance * GBufferAO when ALLOW_STATIC_LIGHTING=1; otherwise AO or diffuse sample occlusion depending compile flags",
+          "decode": "indirect_irradiance_log2_or_ao",
+          "formula": "approx_luminance = exp2((encoded - 0.5) * 16) - exp2(-8); pre-exposure not removed",
+          "material_properties": [
+            "AO"
+          ]
+        }
+      }
+    },
+    "CustomData": {
+      "description": "GBufferD: custom data, interpretation depends on ShadingModelID from GBufferB.A.",
+      "channels": {
+        "R": {
+          "name": "CustomData.R",
+          "meaning": "DefaultLit/Unlit:0; Subsurface/Foliage/Cloth: sqrt(SubsurfaceColor.R); ClearCoat: ClearCoat; Hair: WorldNormalOct.X; Eye: SubsurfaceProfileID",
+          "decode": "custom_data_by_shading_model",
+          "material_properties": [
+            "SubsurfaceColor"
+          ]
+        },
+        "G": {
+          "name": "CustomData.G",
+          "meaning": "DefaultLit/Unlit:0; Subsurface/Foliage/Cloth: sqrt(SubsurfaceColor.G); ClearCoat: ClearCoatRoughness; Hair: WorldNormalOct.Y; Eye: IrisNormalOct.X delta",
+          "decode": "custom_data_by_shading_model",
+          "material_properties": [
+            "SubsurfaceColor"
+          ]
+        },
+        "B": {
+          "name": "CustomData.B",
+          "meaning": "DefaultLit/Unlit:0; Subsurface/Foliage/Cloth: sqrt(SubsurfaceColor.B); ClearCoat: BottomNormalOct.Y delta; Hair: Backlit; Eye: IrisNormalOct.Y delta",
+          "decode": "custom_data_by_shading_model",
+          "material_properties": [
+            "SubsurfaceColor"
+          ]
+        },
+        "A": {
+          "name": "CustomData.A",
+          "meaning": "DefaultLit/Unlit:0; Subsurface/Foliage: Opacity; Cloth: Cloth mask; Eye: 1-IrisMask; Hair:0",
+          "decode": "custom_data_by_shading_model",
+          "material_properties": [
+            "Opacity"
+          ]
+        }
+      },
+      "shading_model_table": {
+        "0": "Unlit: no custom data",
+        "1": "DefaultLit: no custom data",
+        "2": "Subsurface: sqrt(SubsurfaceColor.rgb), Opacity",
+        "3": "PreintegratedSkin: sqrt(SubsurfaceColor.rgb), Opacity",
+        "4": "ClearCoat: ClearCoat, ClearCoatRoughness, BottomNormal delta oct Y/X",
+        "5": "SubsurfaceProfile: ProfileID in R, Opacity in A",
+        "6": "TwoSidedFoliage: sqrt(SubsurfaceColor.rgb), Opacity",
+        "7": "Hair: WorldNormal oct XY, Backlit, 0",
+        "8": "Cloth: sqrt(SubsurfaceColor.rgb), Cloth mask",
+        "9": "Eye: ProfileID, IrisNormal delta XY, 1-IrisMask"
+      }
+    },
+    "PrecomputedShadowFactors": {
+      "description": "GBufferE: static lighting precomputed shadow factors.",
+      "channels": {
+        "R": {
+          "name": "PrecomputedShadowFactor0",
+          "meaning": "Static shadow factor channel 0",
+          "decode": "identity",
+          "material_properties": []
+        },
+        "G": {
+          "name": "PrecomputedShadowFactor1",
+          "meaning": "Static shadow factor channel 1",
+          "decode": "identity",
+          "material_properties": []
+        },
+        "B": {
+          "name": "PrecomputedShadowFactor2",
+          "meaning": "Static shadow factor channel 2",
+          "decode": "identity",
+          "material_properties": []
+        },
+        "A": {
+          "name": "PrecomputedShadowFactor3",
+          "meaning": "Static shadow factor channel 3",
+          "decode": "identity",
+          "material_properties": []
+        }
+      }
+    },
+    "Velocity": {
+      "description": "Velocity RT. Shader outputs float4; actual RT may store RG only or RGBA with depth delta packed into BA.",
+      "channels": {
+        "R": {
+          "name": "Velocity.X",
+          "meaning": "Encoded screen-space velocity X",
+          "decode": "velocity_xy",
+          "formula": "encoded = gamma(V.x) * 0.2495 + 32767/65535; gamma decode: x=(u*abs(u))*0.5 where u=(encoded-bias)/0.2495",
+          "material_properties": [
+            "Velocity"
+          ]
+        },
+        "G": {
+          "name": "Velocity.Y",
+          "meaning": "Encoded screen-space velocity Y",
+          "decode": "velocity_xy",
+          "formula": "encoded = gamma(V.y) * 0.2495 + 32767/65535; gamma decode: y=(u*abs(u))*0.5 where u=(encoded-bias)/0.2495",
+          "material_properties": [
+            "Velocity"
+          ]
+        },
+        "B": {
+          "name": "DeviceZDelta_High16",
+          "meaning": "For RGBA16_UNORM velocity-depth layout: high 16 bits of asuint(DeviceZDelta). Discarded in RG16 layouts.",
+          "decode": "velocity_depth_high16",
+          "material_properties": [
+            "Velocity"
+          ]
+        },
+        "A": {
+          "name": "DeviceZDelta_Low16_AndFlags",
+          "meaning": "For RGBA16_UNORM velocity-depth layout: low bits of asuint(DeviceZDelta) plus temporal/pixel-animation flags. Discarded in RG16 layouts.",
+          "decode": "velocity_depth_low16_flags",
+          "packed_bits": {
+            "15:2_or_15:1": "DeviceZDelta low bits",
+            "1": "TemporalResponsiveness flag when enabled",
+            "0": "PixelAnimation flag"
+          },
+          "material_properties": [
+            "Velocity"
+          ]
+        }
+      }
+    },
+    "WorldTangent_Anisotropy": {
+      "description": "GBufferF: tangent and anisotropy for anisotropic materials.",
+      "channels": {
+        "R": {
+          "name": "WorldTangent.X",
+          "meaning": "Encoded world tangent X",
+          "decode": "encoded_normal_component",
+          "formula": "decoded = encoded * 2 - 1",
+          "material_properties": []
+        },
+        "G": {
+          "name": "WorldTangent.Y",
+          "meaning": "Encoded world tangent Y",
+          "decode": "encoded_normal_component",
+          "formula": "decoded = encoded * 2 - 1",
+          "material_properties": []
+        },
+        "B": {
+          "name": "WorldTangent.Z",
+          "meaning": "Encoded world tangent Z",
+          "decode": "encoded_normal_component",
+          "formula": "decoded = encoded * 2 - 1",
+          "material_properties": []
+        },
+        "A": {
+          "name": "Anisotropy",
+          "meaning": "Encoded anisotropy, maps [-1,1] to [0,1]",
+          "decode": "encoded_normal_component",
+          "formula": "decoded = encoded * 2 - 1",
+          "material_properties": []
+        }
+      }
+    }
+  },
+  "material_properties": {
+    "BaseColor": {
+      "compute_group": "BaseColorRGB",
+      "components": [
+        {
+          "semantic": "BaseColor_AO_IndirectIrradiance",
+          "channels": [
+            "R",
+            "G",
+            "B"
+          ]
+        }
+      ],
+      "computed_together": true
+    },
+    "Normal": {
+      "compute_group": "WorldNormalXYZ",
+      "components": [
+        {
+          "semantic": "WorldNormal_PerObjectData",
+          "channels": [
+            "R",
+            "G",
+            "B"
+          ]
+        }
+      ],
+      "computed_together": true
+    },
+    "AO": {
+      "compute_group": "AO_or_IndirectIrradianceA",
+      "components": [
+        {
+          "semantic": "BaseColor_AO_IndirectIrradiance",
+          "channels": [
+            "A"
+          ]
+        }
+      ],
+      "computed_together": false,
+      "ambiguous_with": "IndirectIrradiance_x_AO"
+    },
+    "Metallic": {
+      "compute_group": "Metallic",
+      "components": [
+        {
+          "semantic": "Metallic_Specular_Roughness_ShadingModel",
+          "channels": [
+            "R"
+          ]
+        }
+      ],
+      "computed_together": false
+    },
+    "Specular": {
+      "compute_group": "Specular",
+      "components": [
+        {
+          "semantic": "Metallic_Specular_Roughness_ShadingModel",
+          "channels": [
+            "G"
+          ]
+        }
+      ],
+      "computed_together": false
+    },
+    "Roughness": {
+      "compute_group": "Roughness",
+      "components": [
+        {
+          "semantic": "Metallic_Specular_Roughness_ShadingModel",
+          "channels": [
+            "B"
+          ]
+        }
+      ],
+      "computed_together": false
+    },
+    "ShadingModelID": {
+      "compute_group": "ShadingModelID_SelectiveMask",
+      "components": [
+        {
+          "semantic": "Metallic_Specular_Roughness_ShadingModel",
+          "channels": [
+            "A"
+          ]
+        }
+      ],
+      "computed_together": false,
+      "packed": true
+    },
+    "SubsurfaceColor": {
+      "compute_group": "CustomDataRGB_ByShadingModel",
+      "components": [
+        {
+          "semantic": "CustomData",
+          "channels": [
+            "R",
+            "G",
+            "B"
+          ]
+        }
+      ],
+      "computed_together": true,
+      "requires_shading_model": [
+        2,
+        3,
+        6,
+        8
+      ]
+    },
+    "Opacity": {
+      "compute_group": "CustomDataA_ByShadingModel",
+      "components": [
+        {
+          "semantic": "CustomData",
+          "channels": [
+            "A"
+          ]
+        }
+      ],
+      "computed_together": false,
+      "requires_shading_model": [
+        2,
+        3,
+        5,
+        6
+      ]
+    },
+    "OpacityMask": {
+      "compute_group": "OpacityMask_NotUsuallyInGBuffer",
+      "components": [],
+      "computed_together": false,
+      "note": "Masked materials usually affect discard/clip, not a dedicated GBuffer MRT channel."
+    },
+    "Velocity": {
+      "compute_group": "VelocityXY_DepthFlags",
+      "components": [
+        {
+          "semantic": "Velocity",
+          "channels": [
+            "R",
+            "G",
+            "B",
+            "A"
+          ]
+        }
+      ],
+      "computed_together": true,
+      "packed": true
+    }
+  }
+}

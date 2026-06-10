@@ -1,0 +1,18 @@
+{
+  "decompiler": "D:/PTGameDoc/TLUS2/Pix/TLUS2-PIX/tools/hlsl_decompiler/HLSLDecompiler.exe",
+  "eid": 7643,
+  "gbuffer_layouts": "D:/UGit/renderdoc/RenderDocExtract/Config/gbuffer_layouts.json",
+  "mesh_json_vertex_limit": 256,
+  "mesh_max_indices": 200000,
+  "mesh_unit": "cm",
+  "no_log": false,
+  "out": "D:/UGit/renderdoc/RenderDocExtract/Output",
+  "primitive_sample_count": 64,
+  "qrenderdoc": "D:/UGit/renderdoc/x64/Release/qrenderdoc.exe",
+  "rdc": "D:/PTGameDoc/TLUS2/Pix/TLUS2-PIX/WuKong_Forest0/build/RDC/WuKong_Forest1.rdc",
+  "renderdoc": "D:/UGit/renderdoc/x64/Release/renderdoc.exe",
+  "renderdoc_module_dirs": [],
+  "step_timeout": 300,
+  "texture_lib": "",
+  "textures_only_used": true
+}
