@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{33257727-03F1-32B8-A1A3-5C9F6FF81AF6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\dxil-spirv\third_party\SPIRV-Cross\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/vendor/dxil-spirv/third_party/SPIRV-Cross/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/vendor/dxil-spirv -BC:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/vendor/dxil-spirv --check-stamp-file C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/vendor/dxil-spirv/third_party/SPIRV-Cross/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\dxil-spirv\third_party\SPIRV-Cross\cmake\gitversion.in.h;C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\dxil-spirv\third_party\SPIRV-Cross\pkg-config\spirv-cross-c.pc.in;C:\Program Files\CMake\share\cmake-4.3\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FindPython3.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\GNUInstallDirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\build_fresh\vendor\dxil-spirv\third_party\SPIRV-Cross\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/vendor/dxil-spirv/third_party/SPIRV-Cross/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/vendor/dxil-spirv -BC:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/vendor/dxil-spirv --check-stamp-file C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/vendor/dxil-spirv/third_party/SPIRV-Cross/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\dxil-spirv\third_party\SPIRV-Cross\cmake\gitversion.in.h;C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\dxil-spirv\third_party\SPIRV-Cross\pkg-config\spirv-cross-c.pc.in;C:\Program Files\CMake\share\cmake-4.3\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FindPython3.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\GNUInstallDirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\build_fresh\vendor\dxil-spirv\third_party\SPIRV-Cross\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/vendor/dxil-spirv/third_party/SPIRV-Cross/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/vendor/dxil-spirv -BC:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/vendor/dxil-spirv --check-stamp-file C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/vendor/dxil-spirv/third_party/SPIRV-Cross/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\dxil-spirv\third_party\SPIRV-Cross\cmake\gitversion.in.h;C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\dxil-spirv\third_party\SPIRV-Cross\pkg-config\spirv-cross-c.pc.in;C:\Program Files\CMake\share\cmake-4.3\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FindPython3.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\GNUInstallDirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\build_fresh\vendor\dxil-spirv\third_party\SPIRV-Cross\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/vendor/dxil-spirv/third_party/SPIRV-Cross/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/vendor/dxil-spirv -BC:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/vendor/dxil-spirv --check-stamp-file C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/vendor/dxil-spirv/third_party/SPIRV-Cross/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\dxil-spirv\third_party\SPIRV-Cross\cmake\gitversion.in.h;C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\dxil-spirv\third_party\SPIRV-Cross\pkg-config\spirv-cross-c.pc.in;C:\Program Files\CMake\share\cmake-4.3\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FindPython3.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\GNUInstallDirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\build_fresh\vendor\dxil-spirv\third_party\SPIRV-Cross\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\build_fresh\vendor\dxil-spirv\ZERO_CHECK.vcxproj">
+      <Project>{A106A972-39E6-31F4-9011-1130B1018116}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\build_fresh\vendor\dxil-spirv\third_party\SPIRV-Cross\spirv-cross.vcxproj">
+      <Project>{94CD240E-A27B-38EA-AEE9-38F2F877AEB2}</Project>
+      <Name>spirv-cross</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\build_fresh\vendor\dxil-spirv\third_party\SPIRV-Cross\spirv-cross-c.vcxproj">
+      <Project>{0CEF8E27-F399-39D2-ADCB-D0349BC86148}</Project>
+      <Name>spirv-cross-c</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\build_fresh\vendor\dxil-spirv\third_party\SPIRV-Cross\spirv-cross-core.vcxproj">
+      <Project>{9E47EAF2-126F-3B47-8355-80970109E3AC}</Project>
+      <Name>spirv-cross-core</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\build_fresh\vendor\dxil-spirv\third_party\SPIRV-Cross\spirv-cross-cpp.vcxproj">
+      <Project>{4D3556AC-B191-381D-9C57-53F874FFFD29}</Project>
+      <Name>spirv-cross-cpp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\build_fresh\vendor\dxil-spirv\third_party\SPIRV-Cross\spirv-cross-glsl.vcxproj">
+      <Project>{FD54183C-0F0C-316B-A4DA-7971BEA5FBE8}</Project>
+      <Name>spirv-cross-glsl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\build_fresh\vendor\dxil-spirv\third_party\SPIRV-Cross\spirv-cross-hlsl.vcxproj">
+      <Project>{BA10E661-0D33-3B98-A6CD-41BD70AA8167}</Project>
+      <Name>spirv-cross-hlsl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\build_fresh\vendor\dxil-spirv\third_party\SPIRV-Cross\spirv-cross-msl.vcxproj">
+      <Project>{AE0CD008-EBC9-3329-9EFC-F2287CBC2072}</Project>
+      <Name>spirv-cross-msl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\build_fresh\vendor\dxil-spirv\third_party\SPIRV-Cross\spirv-cross-reflect.vcxproj">
+      <Project>{DC26882C-6D21-3057-9491-7D177572E110}</Project>
+      <Name>spirv-cross-reflect</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\build_fresh\vendor\dxil-spirv\third_party\SPIRV-Cross\spirv-cross-util.vcxproj">
+      <Project>{63014490-2C43-3283-B741-C5787E865D0A}</Project>
+      <Name>spirv-cross-util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

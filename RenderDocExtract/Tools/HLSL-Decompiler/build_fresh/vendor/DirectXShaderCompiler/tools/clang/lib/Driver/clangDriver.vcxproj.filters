@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\tools\clang\lib\Driver\DriverOptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\tools\clang\include\clang\Driver\Action.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\tools\clang\include\clang\Driver\Compilation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\tools\clang\include\clang\Driver\Driver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\tools\clang\include\clang\Driver\DriverDiagnostic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\tools\clang\include\clang\Driver\Job.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\tools\clang\include\clang\Driver\Multilib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\tools\clang\include\clang\Driver\Options.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\tools\clang\include\clang\Driver\Phases.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\tools\clang\include\clang\Driver\SanitizerArgs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\tools\clang\include\clang\Driver\Tool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\tools\clang\include\clang\Driver\ToolChain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\tools\clang\include\clang\Driver\Types.def">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\tools\clang\include\clang\Driver\Types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\tools\clang\include\clang\Driver\Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\tools\clang\include\clang\Driver\CC1Options.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\tools\clang\include\clang\Driver\CLCompatOptions.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\tools\clang\include\clang\Driver\Options.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\tools\clang\lib\Driver\InputInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\tools\clang\lib\Driver\ToolChains.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\tools\clang\lib\Driver\Tools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\tools\clang\lib\Driver\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{04F0B406-21CF-3157-AC94-F7110BB4BB7C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7609DB7E-1CF2-3ADF-AB37-4DD14C4F9A0A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TableGen descriptions">
+      <UniqueIdentifier>{8169D149-B852-3EAD-8D5E-65491F1870F9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

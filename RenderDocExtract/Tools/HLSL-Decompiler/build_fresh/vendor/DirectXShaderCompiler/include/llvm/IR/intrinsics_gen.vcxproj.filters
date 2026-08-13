@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\build_fresh\vendor\DirectXShaderCompiler\CMakeFiles\c1755dab5d2689a30022c2bf65d287bb\Intrinsics.gen.tmp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\build_fresh\vendor\DirectXShaderCompiler\CMakeFiles\c1755dab5d2689a30022c2bf65d287bb\Intrinsics.gen.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\build_fresh\vendor\DirectXShaderCompiler\CMakeFiles\decdb715bfbaf9ffbf2e0b74bad4fae2\intrinsics_gen.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\include\llvm\IR\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\build_fresh\vendor\DirectXShaderCompiler\include\llvm\IR\CMakeFiles\intrinsics_gen" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{91A85614-798F-39B0-8214-D9026A12A03A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

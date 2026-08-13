@@ -47,12 +47,18 @@ import time
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
-PROJECT_ROOT = Path("D:/UGit/renderdoc/RenderDocExtract")
-SCRIPT_DIR = PROJECT_ROOT / "Scripts"
-if str(SCRIPT_DIR) not in sys.path:
-    sys.path.insert(0, str(SCRIPT_DIR))
 
+import inspect as _inspect
+_SCRIPT_FILE = _inspect.currentframe().f_code.co_filename
+_SCRIPT_DIR = str(Path(_SCRIPT_FILE).resolve().parent)
+if _SCRIPT_DIR not in sys.path:
+    sys.path.insert(0, _SCRIPT_DIR)
 import app_config
+PROJECT_ROOT = app_config.PROJECT_ROOT
+SCRIPT_DIR = PROJECT_ROOT / "Scripts"
+OUTPUT_ROOT = PROJECT_ROOT / "Output"
+LOG_DIR = PROJECT_ROOT / "Logs"
+TEST_DIR = PROJECT_ROOT / "Tests"
 import library_db
 from dds_utils import copy_rgba_tile, read_dds_rgba8, write_dds_rgba8
 

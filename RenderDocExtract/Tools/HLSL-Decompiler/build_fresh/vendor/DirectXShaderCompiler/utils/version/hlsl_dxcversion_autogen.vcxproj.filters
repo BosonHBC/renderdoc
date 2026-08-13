@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\build_fresh\vendor\DirectXShaderCompiler\CMakeFiles\bb7b28b7f877b36ef7f8c11722f2029f\dxcversion.inc.gen.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\build_fresh\vendor\DirectXShaderCompiler\CMakeFiles\fb8a33ab7905ba1400728e9856574d3f\hlsl_dxcversion_autogen.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\utils\version\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\build_fresh\vendor\DirectXShaderCompiler\utils\version\CMakeFiles\hlsl_dxcversion_autogen" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{91A85614-798F-39B0-8214-D9026A12A03A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\tools\clang\lib\Frontend\Rewrite\FixItRewriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\tools\clang\lib\Frontend\Rewrite\FrontendActions_rewrite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\tools\clang\lib\Frontend\Rewrite\HTMLPrint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\tools\clang\lib\Frontend\Rewrite\InclusionRewriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\tools\clang\lib\Frontend\Rewrite\RewriteMacros.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\tools\clang\lib\Frontend\Rewrite\RewriteObjC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\tools\clang\lib\Frontend\Rewrite\RewriteTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\tools\clang\lib\Frontend\Rewrite\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7609DB7E-1CF2-3ADF-AB37-4DD14C4F9A0A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

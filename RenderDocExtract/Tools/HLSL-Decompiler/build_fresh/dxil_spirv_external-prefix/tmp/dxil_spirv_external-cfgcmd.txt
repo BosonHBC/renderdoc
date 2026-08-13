@@ -1,0 +1,1 @@
+cmd='C:/Program Files/CMake/bin/cmake.exe;-B;C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/vendor/dxil-spirv;-S;C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/vendor/dxil-spirv;-DCMAKE_BUILD_TYPE=Release'

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\build_fresh\vendor\DirectXShaderCompiler\CMakeFiles\f2e750c6f66dea01627d94dc5d1a333d\DxilOperations.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\build_fresh\vendor\DirectXShaderCompiler\CMakeFiles\f2e750c6f66dea01627d94dc5d1a333d\DxilOperations.cpp.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\build_fresh\vendor\DirectXShaderCompiler\CMakeFiles\3dfd96eb7e5d278602c2ed64cb6ec4d9\DxilOperations.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\DirectXShaderCompiler\lib\DXIL\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\build_fresh\vendor\DirectXShaderCompiler\lib\DXIL\CMakeFiles\DxilOperations" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{91A85614-798F-39B0-8214-D9026A12A03A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

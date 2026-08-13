@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/vendor/DirectXShaderCompiler/cmake/modules/FindD3D12.cmake
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/vendor/DirectXShaderCompiler/projects/dxilconv/tools/dxbc2dxil/CMakeLists.txt
+C:/Program Files/CMake/share/cmake-4.3/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-4.3/Modules/FindPackageMessage.cmake

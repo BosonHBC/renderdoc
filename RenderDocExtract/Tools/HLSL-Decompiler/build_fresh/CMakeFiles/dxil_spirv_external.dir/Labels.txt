@@ -1,0 +1,13 @@
+# Target labels
+ dxil_spirv_external
+# Source files and their labels
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/dxil_spirv_external
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/55faadff5537a7f2afdf764fa0cf7501/dxil_spirv_external.rule
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/ef0561050ba028aba93d007919bff406/dxil_spirv_external-complete.rule
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/905078a6716515429d2d4801d39516bc/dxil_spirv_external-build.rule
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/905078a6716515429d2d4801d39516bc/dxil_spirv_external-configure.rule
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/905078a6716515429d2d4801d39516bc/dxil_spirv_external-download.rule
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/905078a6716515429d2d4801d39516bc/dxil_spirv_external-install.rule
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/905078a6716515429d2d4801d39516bc/dxil_spirv_external-mkdir.rule
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/905078a6716515429d2d4801d39516bc/dxil_spirv_external-patch.rule
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/905078a6716515429d2d4801d39516bc/dxil_spirv_external-update.rule

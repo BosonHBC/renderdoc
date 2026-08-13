@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/vendor/DirectXShaderCompiler/cmake/modules/HCT.cmake
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/vendor/DirectXShaderCompiler/include/dxc/CMakeLists.txt
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/vendor/DirectXShaderCompiler/include/dxc/Test/TestConfig.h.in
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/vendor/DirectXShaderCompiler/include/dxc/config.h.cmake

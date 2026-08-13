@@ -12,17 +12,20 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Optional, Sequence, Tuple
 
-PROJECT_ROOT = Path("D:/UGit/renderdoc/RenderDocExtract")
+DEFAULT_RDC = Path("D:/PTGameDoc/TLUS2/Pix/TLUS2-PIX/WuKong_Forest0/build/RDC/WuKong_Forest1.rdc")
+DEFAULT_EID = 7643
+SCRIPT_NAME = Path(globals().get("__file__", "extract_primitive_context.py")).stem
+import inspect as _inspect
+_SCRIPT_FILE = _inspect.currentframe().f_code.co_filename
+_SCRIPT_DIR = str(Path(_SCRIPT_FILE).resolve().parent)
+if _SCRIPT_DIR not in sys.path:
+    sys.path.insert(0, _SCRIPT_DIR)
+import app_config  # noqa: E402
+PROJECT_ROOT = app_config.PROJECT_ROOT
 SCRIPT_DIR = PROJECT_ROOT / "Scripts"
 OUTPUT_ROOT = PROJECT_ROOT / "Output"
 LOG_DIR = PROJECT_ROOT / "Logs"
 TEST_DIR = PROJECT_ROOT / "Tests"
-DEFAULT_RDC = Path("D:/PTGameDoc/TLUS2/Pix/TLUS2-PIX/WuKong_Forest0/build/RDC/WuKong_Forest1.rdc")
-DEFAULT_EID = 7643
-SCRIPT_NAME = Path(globals().get("__file__", "extract_primitive_context.py")).stem
-if str(SCRIPT_DIR) not in sys.path:
-    sys.path.insert(0, str(SCRIPT_DIR))
-import app_config  # noqa: E402
 import rd_session  # noqa: E402
 
 

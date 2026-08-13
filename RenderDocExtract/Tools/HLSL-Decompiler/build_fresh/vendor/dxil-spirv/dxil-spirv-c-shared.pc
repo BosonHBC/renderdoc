@@ -1,0 +1,13 @@
+prefix=C:/Program Files (x86)/dxil-spirv
+exec_prefix=C:/Program Files (x86)/dxil-spirv
+libdir=C:/Program Files (x86)/dxil-spirv/lib
+sharedlibdir=C:/Program Files (x86)/dxil-spirv/lib
+includedir=C:/Program Files (x86)/dxil-spirv/include/dxil-spirv
+
+Name: dxil-spirv-c-shared
+Description: C API for dxil-spirv
+Version: 2.54.0
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -ldxil-spirv-c-shared
+Cflags: -I${includedir}

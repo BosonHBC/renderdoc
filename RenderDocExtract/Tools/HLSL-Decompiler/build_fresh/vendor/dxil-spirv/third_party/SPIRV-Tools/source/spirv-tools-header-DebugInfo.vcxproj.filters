@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\build_fresh\vendor\dxil-spirv\CMakeFiles\e6dbca8dc69f9064fab895e6d443f60b\DebugInfo.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\build_fresh\vendor\dxil-spirv\CMakeFiles\1f53b8450eb894827a66d895bd5ed2a4\spirv-tools-header-DebugInfo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\vendor\dxil-spirv\third_party\SPIRV-Tools\source\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\LQTech\UGit\renderdoc\RenderDocExtract\Tools\HLSL-Decompiler\build_fresh\vendor\dxil-spirv\third_party\SPIRV-Tools\source\CMakeFiles\spirv-tools-header-DebugInfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{F314171B-3470-3402-84A1-75CDB0472FFA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

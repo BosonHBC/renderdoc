@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/vendor/SPIRV-Cross/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/vendor/dxil-spirv/third_party/SPIRV-Cross/CMakeLists.txt
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/vendor/dxil-spirv/third_party/SPIRV-Cross/cmake/gitversion.in.h
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/vendor/dxil-spirv/third_party/SPIRV-Cross/pkg-config/spirv-cross-c.pc.in
+C:/Program Files/CMake/share/cmake-4.3/Modules/FindGit.cmake
+C:/Program Files/CMake/share/cmake-4.3/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-4.3/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-4.3/Modules/FindPython/Support.cmake
+C:/Program Files/CMake/share/cmake-4.3/Modules/FindPython3.cmake
+C:/Program Files/CMake/share/cmake-4.3/Modules/GNUInstallDirs.cmake

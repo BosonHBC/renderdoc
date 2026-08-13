@@ -1,0 +1,1565 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Perforce\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\TortoiseSVN\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Users\\bosonhuang\\.cargo\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Programs\\CodeBuddy CN\\bin"
+        - "C:\\Users\\bosonhuang\\.dotnet\\tools"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Android\\platform-tools"
+        - "C:\\Program Files\\Lightbox\\apps\\blade_thm"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\UnrealGameSync\\Latest"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\UGit\\app-5.52.0\\resources\\app\\git\\cmd"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\UGit\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Roaming\\com.tencent.with\\embedded-cli\\current\\bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.14.40+3e7442088 for .NET Framework
+      Build started 8/13/2026 2:15:23 PM.
+      
+      Project "C:\\LQTech\\UGit\\renderdoc\\RenderDocExtract\\Tools\\HLSL-Decompiler\\build_fresh\\CMakeFiles\\4.3.3\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\LQTech\\UGit\\renderdoc\\RenderDocExtract\\Tools\\HLSL-Decompiler\\build_fresh\\CMakeFiles\\4.3.3\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Done Building Project "C:\\LQTech\\UGit\\renderdoc\\RenderDocExtract\\Tools\\HLSL-Decompiler\\build_fresh\\CMakeFiles\\4.3.3\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:01.09
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/4.3.3/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Perforce/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/TortoiseSVN/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Users/bosonhuang/.cargo/bin/"
+      - "C:/Users/bosonhuang/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/CodeBuddy CN/bin/"
+      - "C:/Users/bosonhuang/.dotnet/tools/"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/bosonhuang/AppData/Local/Python/bin/"
+      - "C:/Users/bosonhuang/AppData/Local/Android/platform-tools/"
+      - "C:/Program Files/Lightbox/apps/blade_thm/"
+      - "C:/Users/bosonhuang/AppData/Local/UnrealGameSync/Latest/"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/app-5.52.0/resources/app/git/cmd/"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/bin/"
+      - "C:/Users/bosonhuang/AppData/Roaming/com.tencent.with/embedded-cli/current/bin/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Perforce\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\TortoiseSVN\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Users\\bosonhuang\\.cargo\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Programs\\CodeBuddy CN\\bin"
+        - "C:\\Users\\bosonhuang\\.dotnet\\tools"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Android\\platform-tools"
+        - "C:\\Program Files\\Lightbox\\apps\\blade_thm"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\UnrealGameSync\\Latest"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\UGit\\app-5.52.0\\resources\\app\\git\\cmd"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\UGit\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Roaming\\com.tencent.with\\embedded-cli\\current\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Perforce/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/TortoiseSVN/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Users/bosonhuang/.cargo/bin/"
+      - "C:/Users/bosonhuang/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/CodeBuddy CN/bin/"
+      - "C:/Users/bosonhuang/.dotnet/tools/"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/bosonhuang/AppData/Local/Python/bin/"
+      - "C:/Users/bosonhuang/AppData/Local/Android/platform-tools/"
+      - "C:/Program Files/Lightbox/apps/blade_thm/"
+      - "C:/Users/bosonhuang/AppData/Local/UnrealGameSync/Latest/"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/app-5.52.0/resources/app/git/cmd/"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/bin/"
+      - "C:/Users/bosonhuang/AppData/Roaming/com.tencent.with/embedded-cli/current/bin/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Program Files/Perforce/lld-link.com"
+      - "C:/Program Files/Perforce/lld-link.exe"
+      - "C:/Program Files/Perforce/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Program Files/TortoiseSVN/bin/lld-link.com"
+      - "C:/Program Files/TortoiseSVN/bin/lld-link.exe"
+      - "C:/Program Files/TortoiseSVN/bin/lld-link"
+      - "C:/ProgramData/chocolatey/bin/lld-link.com"
+      - "C:/ProgramData/chocolatey/bin/lld-link.exe"
+      - "C:/ProgramData/chocolatey/bin/lld-link"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link"
+      - "C:/Users/bosonhuang/.cargo/bin/lld-link.com"
+      - "C:/Users/bosonhuang/.cargo/bin/lld-link.exe"
+      - "C:/Users/bosonhuang/.cargo/bin/lld-link"
+      - "C:/Users/bosonhuang/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/bosonhuang/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/CodeBuddy CN/bin/lld-link.com"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/CodeBuddy CN/bin/lld-link.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/CodeBuddy CN/bin/lld-link"
+      - "C:/Users/bosonhuang/.dotnet/tools/lld-link.com"
+      - "C:/Users/bosonhuang/.dotnet/tools/lld-link.exe"
+      - "C:/Users/bosonhuang/.dotnet/tools/lld-link"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/Users/bosonhuang/AppData/Local/Python/bin/lld-link.com"
+      - "C:/Users/bosonhuang/AppData/Local/Python/bin/lld-link.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Python/bin/lld-link"
+      - "C:/Users/bosonhuang/AppData/Local/Android/platform-tools/lld-link.com"
+      - "C:/Users/bosonhuang/AppData/Local/Android/platform-tools/lld-link.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Android/platform-tools/lld-link"
+      - "C:/Program Files/Lightbox/apps/blade_thm/lld-link.com"
+      - "C:/Program Files/Lightbox/apps/blade_thm/lld-link.exe"
+      - "C:/Program Files/Lightbox/apps/blade_thm/lld-link"
+      - "C:/Users/bosonhuang/AppData/Local/UnrealGameSync/Latest/lld-link.com"
+      - "C:/Users/bosonhuang/AppData/Local/UnrealGameSync/Latest/lld-link.exe"
+      - "C:/Users/bosonhuang/AppData/Local/UnrealGameSync/Latest/lld-link"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/app-5.52.0/resources/app/git/cmd/lld-link.com"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/app-5.52.0/resources/app/git/cmd/lld-link.exe"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/app-5.52.0/resources/app/git/cmd/lld-link"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/bin/lld-link.com"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/bin/lld-link.exe"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/bin/lld-link"
+      - "C:/Users/bosonhuang/AppData/Roaming/com.tencent.with/embedded-cli/current/bin/lld-link.com"
+      - "C:/Users/bosonhuang/AppData/Roaming/com.tencent.with/embedded-cli/current/bin/lld-link.exe"
+      - "C:/Users/bosonhuang/AppData/Roaming/com.tencent.with/embedded-cli/current/bin/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Perforce\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\TortoiseSVN\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Users\\bosonhuang\\.cargo\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Programs\\CodeBuddy CN\\bin"
+        - "C:\\Users\\bosonhuang\\.dotnet\\tools"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Android\\platform-tools"
+        - "C:\\Program Files\\Lightbox\\apps\\blade_thm"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\UnrealGameSync\\Latest"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\UGit\\app-5.52.0\\resources\\app\\git\\cmd"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\UGit\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Roaming\\com.tencent.with\\embedded-cli\\current\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Perforce/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/TortoiseSVN/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Users/bosonhuang/.cargo/bin/"
+      - "C:/Users/bosonhuang/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/CodeBuddy CN/bin/"
+      - "C:/Users/bosonhuang/.dotnet/tools/"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/bosonhuang/AppData/Local/Python/bin/"
+      - "C:/Users/bosonhuang/AppData/Local/Android/platform-tools/"
+      - "C:/Program Files/Lightbox/apps/blade_thm/"
+      - "C:/Users/bosonhuang/AppData/Local/UnrealGameSync/Latest/"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/app-5.52.0/resources/app/git/cmd/"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/bin/"
+      - "C:/Users/bosonhuang/AppData/Roaming/com.tencent.with/embedded-cli/current/bin/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Perforce\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\TortoiseSVN\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Users\\bosonhuang\\.cargo\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Programs\\CodeBuddy CN\\bin"
+        - "C:\\Users\\bosonhuang\\.dotnet\\tools"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Android\\platform-tools"
+        - "C:\\Program Files\\Lightbox\\apps\\blade_thm"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\UnrealGameSync\\Latest"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\UGit\\app-5.52.0\\resources\\app\\git\\cmd"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\UGit\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Roaming\\com.tencent.with\\embedded-cli\\current\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_MT"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mt"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Perforce/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/TortoiseSVN/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Users/bosonhuang/.cargo/bin/"
+      - "C:/Users/bosonhuang/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/CodeBuddy CN/bin/"
+      - "C:/Users/bosonhuang/.dotnet/tools/"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/bosonhuang/AppData/Local/Python/bin/"
+      - "C:/Users/bosonhuang/AppData/Local/Android/platform-tools/"
+      - "C:/Program Files/Lightbox/apps/blade_thm/"
+      - "C:/Users/bosonhuang/AppData/Local/UnrealGameSync/Latest/"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/app-5.52.0/resources/app/git/cmd/"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/bin/"
+      - "C:/Users/bosonhuang/AppData/Roaming/com.tencent.with/embedded-cli/current/bin/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt"
+      - "C:/Windows/System32/mt.com"
+      - "C:/Windows/System32/mt.exe"
+      - "C:/Windows/System32/mt"
+      - "C:/Windows/mt.com"
+      - "C:/Windows/mt.exe"
+      - "C:/Windows/mt"
+      - "C:/Windows/System32/wbem/mt.com"
+      - "C:/Windows/System32/wbem/mt.exe"
+      - "C:/Windows/System32/wbem/mt"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt"
+      - "C:/Windows/System32/OpenSSH/mt.com"
+      - "C:/Windows/System32/OpenSSH/mt.exe"
+      - "C:/Windows/System32/OpenSSH/mt"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt"
+      - "C:/Program Files/dotnet/mt.com"
+      - "C:/Program Files/dotnet/mt.exe"
+      - "C:/Program Files/dotnet/mt"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt"
+      - "C:/Program Files/Perforce/mt.com"
+      - "C:/Program Files/Perforce/mt.exe"
+      - "C:/Program Files/Perforce/mt"
+      - "C:/Program Files/CMake/bin/mt.com"
+      - "C:/Program Files/CMake/bin/mt.exe"
+      - "C:/Program Files/CMake/bin/mt"
+      - "C:/Program Files/TortoiseSVN/bin/mt.com"
+      - "C:/Program Files/TortoiseSVN/bin/mt.exe"
+      - "C:/Program Files/TortoiseSVN/bin/mt"
+      - "C:/ProgramData/chocolatey/bin/mt.com"
+      - "C:/ProgramData/chocolatey/bin/mt.exe"
+      - "C:/ProgramData/chocolatey/bin/mt"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/mt.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/mt.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/mt"
+      - "C:/Users/bosonhuang/.cargo/bin/mt.com"
+      - "C:/Users/bosonhuang/.cargo/bin/mt.exe"
+      - "C:/Users/bosonhuang/.cargo/bin/mt"
+      - "C:/Users/bosonhuang/AppData/Local/Microsoft/WindowsApps/mt.com"
+      - "C:/Users/bosonhuang/AppData/Local/Microsoft/WindowsApps/mt.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Microsoft/WindowsApps/mt"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/CodeBuddy CN/bin/mt.com"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/CodeBuddy CN/bin/mt.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/CodeBuddy CN/bin/mt"
+      - "C:/Users/bosonhuang/.dotnet/tools/mt.com"
+      - "C:/Users/bosonhuang/.dotnet/tools/mt.exe"
+      - "C:/Users/bosonhuang/.dotnet/tools/mt"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/Microsoft VS Code/bin/mt.com"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/Microsoft VS Code/bin/mt.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/Microsoft VS Code/bin/mt"
+      - "C:/Users/bosonhuang/AppData/Local/Python/bin/mt.com"
+      - "C:/Users/bosonhuang/AppData/Local/Python/bin/mt.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Python/bin/mt"
+      - "C:/Users/bosonhuang/AppData/Local/Android/platform-tools/mt.com"
+      - "C:/Users/bosonhuang/AppData/Local/Android/platform-tools/mt.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Android/platform-tools/mt"
+      - "C:/Program Files/Lightbox/apps/blade_thm/mt.com"
+      - "C:/Program Files/Lightbox/apps/blade_thm/mt.exe"
+      - "C:/Program Files/Lightbox/apps/blade_thm/mt"
+      - "C:/Users/bosonhuang/AppData/Local/UnrealGameSync/Latest/mt.com"
+      - "C:/Users/bosonhuang/AppData/Local/UnrealGameSync/Latest/mt.exe"
+      - "C:/Users/bosonhuang/AppData/Local/UnrealGameSync/Latest/mt"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/app-5.52.0/resources/app/git/cmd/mt.com"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/app-5.52.0/resources/app/git/cmd/mt.exe"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/app-5.52.0/resources/app/git/cmd/mt"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/bin/mt.com"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/bin/mt.exe"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/bin/mt"
+      - "C:/Users/bosonhuang/AppData/Roaming/com.tencent.with/embedded-cli/current/bin/mt.com"
+      - "C:/Users/bosonhuang/AppData/Roaming/com.tencent.with/embedded-cli/current/bin/mt.exe"
+      - "C:/Users/bosonhuang/AppData/Roaming/com.tencent.with/embedded-cli/current/bin/mt"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Perforce\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\TortoiseSVN\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Users\\bosonhuang\\.cargo\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Programs\\CodeBuddy CN\\bin"
+        - "C:\\Users\\bosonhuang\\.dotnet\\tools"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Android\\platform-tools"
+        - "C:\\Program Files\\Lightbox\\apps\\blade_thm"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\UnrealGameSync\\Latest"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\UGit\\app-5.52.0\\resources\\app\\git\\cmd"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\UGit\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Roaming\\com.tencent.with\\embedded-cli\\current\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lib"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Perforce/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/TortoiseSVN/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Users/bosonhuang/.cargo/bin/"
+      - "C:/Users/bosonhuang/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/CodeBuddy CN/bin/"
+      - "C:/Users/bosonhuang/.dotnet/tools/"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/bosonhuang/AppData/Local/Python/bin/"
+      - "C:/Users/bosonhuang/AppData/Local/Android/platform-tools/"
+      - "C:/Program Files/Lightbox/apps/blade_thm/"
+      - "C:/Users/bosonhuang/AppData/Local/UnrealGameSync/Latest/"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/app-5.52.0/resources/app/git/cmd/"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/bin/"
+      - "C:/Users/bosonhuang/AppData/Roaming/com.tencent.with/embedded-cli/current/bin/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Perforce\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\TortoiseSVN\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Users\\bosonhuang\\.cargo\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Programs\\CodeBuddy CN\\bin"
+        - "C:\\Users\\bosonhuang\\.dotnet\\tools"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Android\\platform-tools"
+        - "C:\\Program Files\\Lightbox\\apps\\blade_thm"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\UnrealGameSync\\Latest"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\UGit\\app-5.52.0\\resources\\app\\git\\cmd"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\UGit\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Roaming\\com.tencent.with\\embedded-cli\\current\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Perforce\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\TortoiseSVN\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Users\\bosonhuang\\.cargo\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Programs\\CodeBuddy CN\\bin"
+        - "C:\\Users\\bosonhuang\\.dotnet\\tools"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Android\\platform-tools"
+        - "C:\\Program Files\\Lightbox\\apps\\blade_thm"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\UnrealGameSync\\Latest"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\UGit\\app-5.52.0\\resources\\app\\git\\cmd"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\UGit\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Roaming\\com.tencent.with\\embedded-cli\\current\\bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.14.40+3e7442088 for .NET Framework
+      Build started 8/13/2026 2:15:24 PM.
+      
+      Project "C:\\LQTech\\UGit\\renderdoc\\RenderDocExtract\\Tools\\HLSL-Decompiler\\build_fresh\\CMakeFiles\\4.3.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\LQTech\\UGit\\renderdoc\\RenderDocExtract\\Tools\\HLSL-Decompiler\\build_fresh\\CMakeFiles\\4.3.3\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Done Building Project "C:\\LQTech\\UGit\\renderdoc\\RenderDocExtract\\Tools\\HLSL-Decompiler\\build_fresh\\CMakeFiles\\4.3.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:00.72
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/4.3.3/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Perforce/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/TortoiseSVN/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Users/bosonhuang/.cargo/bin/"
+      - "C:/Users/bosonhuang/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/CodeBuddy CN/bin/"
+      - "C:/Users/bosonhuang/.dotnet/tools/"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/bosonhuang/AppData/Local/Python/bin/"
+      - "C:/Users/bosonhuang/AppData/Local/Android/platform-tools/"
+      - "C:/Program Files/Lightbox/apps/blade_thm/"
+      - "C:/Users/bosonhuang/AppData/Local/UnrealGameSync/Latest/"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/app-5.52.0/resources/app/git/cmd/"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/bin/"
+      - "C:/Users/bosonhuang/AppData/Roaming/com.tencent.with/embedded-cli/current/bin/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Program Files/Perforce/lld-link.com"
+      - "C:/Program Files/Perforce/lld-link.exe"
+      - "C:/Program Files/Perforce/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Program Files/TortoiseSVN/bin/lld-link.com"
+      - "C:/Program Files/TortoiseSVN/bin/lld-link.exe"
+      - "C:/Program Files/TortoiseSVN/bin/lld-link"
+      - "C:/ProgramData/chocolatey/bin/lld-link.com"
+      - "C:/ProgramData/chocolatey/bin/lld-link.exe"
+      - "C:/ProgramData/chocolatey/bin/lld-link"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link"
+      - "C:/Users/bosonhuang/.cargo/bin/lld-link.com"
+      - "C:/Users/bosonhuang/.cargo/bin/lld-link.exe"
+      - "C:/Users/bosonhuang/.cargo/bin/lld-link"
+      - "C:/Users/bosonhuang/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/bosonhuang/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/CodeBuddy CN/bin/lld-link.com"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/CodeBuddy CN/bin/lld-link.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/CodeBuddy CN/bin/lld-link"
+      - "C:/Users/bosonhuang/.dotnet/tools/lld-link.com"
+      - "C:/Users/bosonhuang/.dotnet/tools/lld-link.exe"
+      - "C:/Users/bosonhuang/.dotnet/tools/lld-link"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/Users/bosonhuang/AppData/Local/Python/bin/lld-link.com"
+      - "C:/Users/bosonhuang/AppData/Local/Python/bin/lld-link.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Python/bin/lld-link"
+      - "C:/Users/bosonhuang/AppData/Local/Android/platform-tools/lld-link.com"
+      - "C:/Users/bosonhuang/AppData/Local/Android/platform-tools/lld-link.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Android/platform-tools/lld-link"
+      - "C:/Program Files/Lightbox/apps/blade_thm/lld-link.com"
+      - "C:/Program Files/Lightbox/apps/blade_thm/lld-link.exe"
+      - "C:/Program Files/Lightbox/apps/blade_thm/lld-link"
+      - "C:/Users/bosonhuang/AppData/Local/UnrealGameSync/Latest/lld-link.com"
+      - "C:/Users/bosonhuang/AppData/Local/UnrealGameSync/Latest/lld-link.exe"
+      - "C:/Users/bosonhuang/AppData/Local/UnrealGameSync/Latest/lld-link"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/app-5.52.0/resources/app/git/cmd/lld-link.com"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/app-5.52.0/resources/app/git/cmd/lld-link.exe"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/app-5.52.0/resources/app/git/cmd/lld-link"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/bin/lld-link.com"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/bin/lld-link.exe"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/bin/lld-link"
+      - "C:/Users/bosonhuang/AppData/Roaming/com.tencent.with/embedded-cli/current/bin/lld-link.com"
+      - "C:/Users/bosonhuang/AppData/Roaming/com.tencent.with/embedded-cli/current/bin/lld-link.exe"
+      - "C:/Users/bosonhuang/AppData/Roaming/com.tencent.with/embedded-cli/current/bin/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Perforce\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\TortoiseSVN\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Users\\bosonhuang\\.cargo\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Programs\\CodeBuddy CN\\bin"
+        - "C:\\Users\\bosonhuang\\.dotnet\\tools"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Android\\platform-tools"
+        - "C:\\Program Files\\Lightbox\\apps\\blade_thm"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\UnrealGameSync\\Latest"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\UGit\\app-5.52.0\\resources\\app\\git\\cmd"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\UGit\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Roaming\\com.tencent.with\\embedded-cli\\current\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC.cmake:592 (enable_language)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC.cmake:565 (__windows_compiler_msvc_enable_rc)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC-C.cmake:5 (__windows_compiler_msvc)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCInformation.cmake:48 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "rc"
+    candidate_directories:
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Perforce/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/TortoiseSVN/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Users/bosonhuang/.cargo/bin/"
+      - "C:/Users/bosonhuang/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/CodeBuddy CN/bin/"
+      - "C:/Users/bosonhuang/.dotnet/tools/"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/bosonhuang/AppData/Local/Python/bin/"
+      - "C:/Users/bosonhuang/AppData/Local/Android/platform-tools/"
+      - "C:/Program Files/Lightbox/apps/blade_thm/"
+      - "C:/Users/bosonhuang/AppData/Local/UnrealGameSync/Latest/"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/app-5.52.0/resources/app/git/cmd/"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/bin/"
+      - "C:/Users/bosonhuang/AppData/Roaming/com.tencent.with/embedded-cli/current/bin/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/HLSLDecompiler/bin/"
+      - "C:/Program Files (x86)/HLSLDecompiler/sbin/"
+      - "C:/Program Files (x86)/HLSLDecompiler/"
+    searched_directories:
+      - "C:/Windows/System32/rc.com"
+      - "C:/Windows/System32/rc.exe"
+      - "C:/Windows/System32/rc"
+      - "C:/Windows/rc.com"
+      - "C:/Windows/rc.exe"
+      - "C:/Windows/rc"
+      - "C:/Windows/System32/wbem/rc.com"
+      - "C:/Windows/System32/wbem/rc.exe"
+      - "C:/Windows/System32/wbem/rc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc"
+      - "C:/Windows/System32/OpenSSH/rc.com"
+      - "C:/Windows/System32/OpenSSH/rc.exe"
+      - "C:/Windows/System32/OpenSSH/rc"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc"
+      - "C:/Program Files/dotnet/rc.com"
+      - "C:/Program Files/dotnet/rc.exe"
+      - "C:/Program Files/dotnet/rc"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc"
+      - "C:/Program Files/Perforce/rc.com"
+      - "C:/Program Files/Perforce/rc.exe"
+      - "C:/Program Files/Perforce/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files/TortoiseSVN/bin/rc.com"
+      - "C:/Program Files/TortoiseSVN/bin/rc.exe"
+      - "C:/Program Files/TortoiseSVN/bin/rc"
+      - "C:/ProgramData/chocolatey/bin/rc.com"
+      - "C:/ProgramData/chocolatey/bin/rc.exe"
+      - "C:/ProgramData/chocolatey/bin/rc"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/rc.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/rc.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/rc"
+      - "C:/Users/bosonhuang/.cargo/bin/rc.com"
+      - "C:/Users/bosonhuang/.cargo/bin/rc.exe"
+      - "C:/Users/bosonhuang/.cargo/bin/rc"
+      - "C:/Users/bosonhuang/AppData/Local/Microsoft/WindowsApps/rc.com"
+      - "C:/Users/bosonhuang/AppData/Local/Microsoft/WindowsApps/rc.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Microsoft/WindowsApps/rc"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/CodeBuddy CN/bin/rc.com"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/CodeBuddy CN/bin/rc.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/CodeBuddy CN/bin/rc"
+      - "C:/Users/bosonhuang/.dotnet/tools/rc.com"
+      - "C:/Users/bosonhuang/.dotnet/tools/rc.exe"
+      - "C:/Users/bosonhuang/.dotnet/tools/rc"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/Microsoft VS Code/bin/rc.com"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/Microsoft VS Code/bin/rc.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/Microsoft VS Code/bin/rc"
+      - "C:/Users/bosonhuang/AppData/Local/Python/bin/rc.com"
+      - "C:/Users/bosonhuang/AppData/Local/Python/bin/rc.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Python/bin/rc"
+      - "C:/Users/bosonhuang/AppData/Local/Android/platform-tools/rc.com"
+      - "C:/Users/bosonhuang/AppData/Local/Android/platform-tools/rc.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Android/platform-tools/rc"
+      - "C:/Program Files/Lightbox/apps/blade_thm/rc.com"
+      - "C:/Program Files/Lightbox/apps/blade_thm/rc.exe"
+      - "C:/Program Files/Lightbox/apps/blade_thm/rc"
+      - "C:/Users/bosonhuang/AppData/Local/UnrealGameSync/Latest/rc.com"
+      - "C:/Users/bosonhuang/AppData/Local/UnrealGameSync/Latest/rc.exe"
+      - "C:/Users/bosonhuang/AppData/Local/UnrealGameSync/Latest/rc"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/app-5.52.0/resources/app/git/cmd/rc.com"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/app-5.52.0/resources/app/git/cmd/rc.exe"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/app-5.52.0/resources/app/git/cmd/rc"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/bin/rc.com"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/bin/rc.exe"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/bin/rc"
+      - "C:/Users/bosonhuang/AppData/Roaming/com.tencent.with/embedded-cli/current/bin/rc.com"
+      - "C:/Users/bosonhuang/AppData/Roaming/com.tencent.with/embedded-cli/current/bin/rc.exe"
+      - "C:/Users/bosonhuang/AppData/Roaming/com.tencent.with/embedded-cli/current/bin/rc"
+      - "C:/Program Files/bin/rc.com"
+      - "C:/Program Files/bin/rc.exe"
+      - "C:/Program Files/bin/rc"
+      - "C:/Program Files/sbin/rc.com"
+      - "C:/Program Files/sbin/rc.exe"
+      - "C:/Program Files/sbin/rc"
+      - "C:/Program Files/rc.com"
+      - "C:/Program Files/rc.exe"
+      - "C:/Program Files/rc"
+      - "C:/Program Files (x86)/bin/rc.com"
+      - "C:/Program Files (x86)/bin/rc.exe"
+      - "C:/Program Files (x86)/bin/rc"
+      - "C:/Program Files (x86)/sbin/rc.com"
+      - "C:/Program Files (x86)/sbin/rc.exe"
+      - "C:/Program Files (x86)/sbin/rc"
+      - "C:/Program Files (x86)/rc.com"
+      - "C:/Program Files (x86)/rc.exe"
+      - "C:/Program Files (x86)/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files/CMake/sbin/rc.com"
+      - "C:/Program Files/CMake/sbin/rc.exe"
+      - "C:/Program Files/CMake/sbin/rc"
+      - "C:/Program Files/CMake/rc.com"
+      - "C:/Program Files/CMake/rc.exe"
+      - "C:/Program Files/CMake/rc"
+      - "C:/Program Files (x86)/HLSLDecompiler/bin/rc.com"
+      - "C:/Program Files (x86)/HLSLDecompiler/bin/rc.exe"
+      - "C:/Program Files (x86)/HLSLDecompiler/bin/rc"
+      - "C:/Program Files (x86)/HLSLDecompiler/sbin/rc.com"
+      - "C:/Program Files (x86)/HLSLDecompiler/sbin/rc.exe"
+      - "C:/Program Files (x86)/HLSLDecompiler/sbin/rc"
+      - "C:/Program Files (x86)/HLSLDecompiler/rc.com"
+      - "C:/Program Files (x86)/HLSLDecompiler/rc.exe"
+      - "C:/Program Files (x86)/HLSLDecompiler/rc"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Perforce\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\TortoiseSVN\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Users\\bosonhuang\\.cargo\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Programs\\CodeBuddy CN\\bin"
+        - "C:\\Users\\bosonhuang\\.dotnet\\tools"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Android\\platform-tools"
+        - "C:\\Program Files\\Lightbox\\apps\\blade_thm"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\UnrealGameSync\\Latest"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\UGit\\app-5.52.0\\resources\\app\\git\\cmd"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\UGit\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Roaming\\com.tencent.with\\embedded-cli\\current\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/HLSLDecompiler"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/HLSLDecompiler"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/CMakeScratch/TryCompile-gxmwo5"
+      binary: "C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/CMakeScratch/TryCompile-gxmwo5"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/CMakeScratch/TryCompile-gxmwo5'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_630ee.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 8/13/2026 2:15:25 PM.
+        
+        Project "C:\\LQTech\\UGit\\renderdoc\\RenderDocExtract\\Tools\\HLSL-Decompiler\\build_fresh\\CMakeFiles\\CMakeScratch\\TryCompile-gxmwo5\\cmTC_630ee.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\LQTech\\UGit\\renderdoc\\RenderDocExtract\\Tools\\HLSL-Decompiler\\build_fresh\\CMakeFiles\\CMakeScratch\\TryCompile-gxmwo5\\Debug\\".
+          Creating directory "cmTC_630ee.dir\\Debug\\cmTC_630ee.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_630ee.dir\\Debug\\cmTC_630ee.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_630ee.dir\\Debug\\cmTC_630ee.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_630ee.dir\\Debug\\\\" /Fd"cmTC_630ee.dir\\Debug\\vc143.pdb" /external:W3 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35227 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_630ee.dir\\Debug\\\\" /Fd"cmTC_630ee.dir\\Debug\\vc143.pdb" /external:W3 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\LQTech\\UGit\\renderdoc\\RenderDocExtract\\Tools\\HLSL-Decompiler\\build_fresh\\CMakeFiles\\CMakeScratch\\TryCompile-gxmwo5\\Debug\\cmTC_630ee.exe" /INCREMENTAL /ILK:"cmTC_630ee.dir\\Debug\\cmTC_630ee.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/CMakeScratch/TryCompile-gxmwo5/Debug/cmTC_630ee.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/CMakeScratch/TryCompile-gxmwo5/Debug/cmTC_630ee.lib" /MACHINE:X64  /machine:x64 cmTC_630ee.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_630ee.vcxproj -> C:\\LQTech\\UGit\\renderdoc\\RenderDocExtract\\Tools\\HLSL-Decompiler\\build_fresh\\CMakeFiles\\CMakeScratch\\TryCompile-gxmwo5\\Debug\\cmTC_630ee.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_630ee.dir\\Debug\\cmTC_630ee.tlog\\unsuccessfulbuild".
+          Touching "cmTC_630ee.dir\\Debug\\cmTC_630ee.tlog\\cmTC_630ee.lastbuildstate".
+        Done Building Project "C:\\LQTech\\UGit\\renderdoc\\RenderDocExtract\\Tools\\HLSL-Decompiler\\build_fresh\\CMakeFiles\\CMakeScratch\\TryCompile-gxmwo5\\cmTC_630ee.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.61
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.44.35227.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/CMakeScratch/TryCompile-xz2igy"
+      binary: "C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/CMakeScratch/TryCompile-xz2igy"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/CMakeScratch/TryCompile-xz2igy'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_6f544.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 8/13/2026 2:15:26 PM.
+        
+        Project "C:\\LQTech\\UGit\\renderdoc\\RenderDocExtract\\Tools\\HLSL-Decompiler\\build_fresh\\CMakeFiles\\CMakeScratch\\TryCompile-xz2igy\\cmTC_6f544.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\LQTech\\UGit\\renderdoc\\RenderDocExtract\\Tools\\HLSL-Decompiler\\build_fresh\\CMakeFiles\\CMakeScratch\\TryCompile-xz2igy\\Debug\\".
+          Creating directory "cmTC_6f544.dir\\Debug\\cmTC_6f544.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_6f544.dir\\Debug\\cmTC_6f544.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_6f544.dir\\Debug\\cmTC_6f544.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_6f544.dir\\Debug\\\\" /Fd"cmTC_6f544.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35227 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_6f544.dir\\Debug\\\\" /Fd"cmTC_6f544.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\LQTech\\UGit\\renderdoc\\RenderDocExtract\\Tools\\HLSL-Decompiler\\build_fresh\\CMakeFiles\\CMakeScratch\\TryCompile-xz2igy\\Debug\\cmTC_6f544.exe" /INCREMENTAL /ILK:"cmTC_6f544.dir\\Debug\\cmTC_6f544.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/CMakeScratch/TryCompile-xz2igy/Debug/cmTC_6f544.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/CMakeScratch/TryCompile-xz2igy/Debug/cmTC_6f544.lib" /MACHINE:X64  /machine:x64 cmTC_6f544.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_6f544.vcxproj -> C:\\LQTech\\UGit\\renderdoc\\RenderDocExtract\\Tools\\HLSL-Decompiler\\build_fresh\\CMakeFiles\\CMakeScratch\\TryCompile-xz2igy\\Debug\\cmTC_6f544.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_6f544.dir\\Debug\\cmTC_6f544.tlog\\unsuccessfulbuild".
+          Touching "cmTC_6f544.dir\\Debug\\cmTC_6f544.tlog\\cmTC_6f544.lastbuildstate".
+        Done Building Project "C:\\LQTech\\UGit\\renderdoc\\RenderDocExtract\\Tools\\HLSL-Decompiler\\build_fresh\\CMakeFiles\\CMakeScratch\\TryCompile-xz2igy\\cmTC_6f544.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.63
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.44.35227.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindGit.cmake:111 (find_program)"
+      - "CMakeLists.txt:14 (find_package)"
+    mode: "program"
+    variable: "GIT_EXECUTABLE"
+    description: "Git command line client"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "git.cmd"
+      - "git"
+    candidate_directories:
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Perforce/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/TortoiseSVN/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Users/bosonhuang/.cargo/bin/"
+      - "C:/Users/bosonhuang/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/CodeBuddy CN/bin/"
+      - "C:/Users/bosonhuang/.dotnet/tools/"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/bosonhuang/AppData/Local/Python/bin/"
+      - "C:/Users/bosonhuang/AppData/Local/Android/platform-tools/"
+      - "C:/Program Files/Lightbox/apps/blade_thm/"
+      - "C:/Users/bosonhuang/AppData/Local/UnrealGameSync/Latest/"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/app-5.52.0/resources/app/git/cmd/"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/bin/"
+      - "C:/Users/bosonhuang/AppData/Roaming/com.tencent.with/embedded-cli/current/bin/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/HLSLDecompiler/bin/"
+      - "C:/Program Files (x86)/HLSLDecompiler/sbin/"
+      - "C:/Program Files (x86)/HLSLDecompiler/"
+      - "C:/Users/bosonhuang/AppData/Local/Atlassian/SourceTree/git_local/bin/"
+    searched_directories:
+      - "C:/Windows/System32/git.cmd.com"
+      - "C:/Windows/System32/git.cmd.exe"
+      - "C:/Windows/System32/git.cmd"
+      - "C:/Windows/git.cmd.com"
+      - "C:/Windows/git.cmd.exe"
+      - "C:/Windows/git.cmd"
+      - "C:/Windows/System32/wbem/git.cmd.com"
+      - "C:/Windows/System32/wbem/git.cmd.exe"
+      - "C:/Windows/System32/wbem/git.cmd"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/git.cmd.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/git.cmd.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/git.cmd"
+      - "C:/Windows/System32/OpenSSH/git.cmd.com"
+      - "C:/Windows/System32/OpenSSH/git.cmd.exe"
+      - "C:/Windows/System32/OpenSSH/git.cmd"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/git.cmd.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/git.cmd.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/git.cmd"
+      - "C:/Program Files/dotnet/git.cmd.com"
+      - "C:/Program Files/dotnet/git.cmd.exe"
+      - "C:/Program Files/dotnet/git.cmd"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/git.cmd.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/git.cmd.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/git.cmd"
+      - "C:/Program Files/Perforce/git.cmd.com"
+      - "C:/Program Files/Perforce/git.cmd.exe"
+      - "C:/Program Files/Perforce/git.cmd"
+      - "C:/Program Files/CMake/bin/git.cmd.com"
+      - "C:/Program Files/CMake/bin/git.cmd.exe"
+      - "C:/Program Files/CMake/bin/git.cmd"
+      - "C:/Program Files/TortoiseSVN/bin/git.cmd.com"
+      - "C:/Program Files/TortoiseSVN/bin/git.cmd.exe"
+      - "C:/Program Files/TortoiseSVN/bin/git.cmd"
+      - "C:/ProgramData/chocolatey/bin/git.cmd.com"
+      - "C:/ProgramData/chocolatey/bin/git.cmd.exe"
+      - "C:/ProgramData/chocolatey/bin/git.cmd"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/git.cmd.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/git.cmd.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/git.cmd"
+      - "C:/Users/bosonhuang/.cargo/bin/git.cmd.com"
+      - "C:/Users/bosonhuang/.cargo/bin/git.cmd.exe"
+      - "C:/Users/bosonhuang/.cargo/bin/git.cmd"
+      - "C:/Users/bosonhuang/AppData/Local/Microsoft/WindowsApps/git.cmd.com"
+      - "C:/Users/bosonhuang/AppData/Local/Microsoft/WindowsApps/git.cmd.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Microsoft/WindowsApps/git.cmd"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/CodeBuddy CN/bin/git.cmd.com"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/CodeBuddy CN/bin/git.cmd.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/CodeBuddy CN/bin/git.cmd"
+      - "C:/Users/bosonhuang/.dotnet/tools/git.cmd.com"
+      - "C:/Users/bosonhuang/.dotnet/tools/git.cmd.exe"
+      - "C:/Users/bosonhuang/.dotnet/tools/git.cmd"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/Microsoft VS Code/bin/git.cmd.com"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/Microsoft VS Code/bin/git.cmd.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/Microsoft VS Code/bin/git.cmd"
+      - "C:/Users/bosonhuang/AppData/Local/Python/bin/git.cmd.com"
+      - "C:/Users/bosonhuang/AppData/Local/Python/bin/git.cmd.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Python/bin/git.cmd"
+      - "C:/Users/bosonhuang/AppData/Local/Android/platform-tools/git.cmd.com"
+      - "C:/Users/bosonhuang/AppData/Local/Android/platform-tools/git.cmd.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Android/platform-tools/git.cmd"
+      - "C:/Program Files/Lightbox/apps/blade_thm/git.cmd.com"
+      - "C:/Program Files/Lightbox/apps/blade_thm/git.cmd.exe"
+      - "C:/Program Files/Lightbox/apps/blade_thm/git.cmd"
+      - "C:/Users/bosonhuang/AppData/Local/UnrealGameSync/Latest/git.cmd.com"
+      - "C:/Users/bosonhuang/AppData/Local/UnrealGameSync/Latest/git.cmd.exe"
+      - "C:/Users/bosonhuang/AppData/Local/UnrealGameSync/Latest/git.cmd"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/app-5.52.0/resources/app/git/cmd/git.cmd.com"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/app-5.52.0/resources/app/git/cmd/git.cmd.exe"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/app-5.52.0/resources/app/git/cmd/git.cmd"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/bin/git.cmd.com"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/bin/git.cmd.exe"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/bin/git.cmd"
+      - "C:/Users/bosonhuang/AppData/Roaming/com.tencent.with/embedded-cli/current/bin/git.cmd.com"
+      - "C:/Users/bosonhuang/AppData/Roaming/com.tencent.with/embedded-cli/current/bin/git.cmd.exe"
+      - "C:/Users/bosonhuang/AppData/Roaming/com.tencent.with/embedded-cli/current/bin/git.cmd"
+      - "C:/Program Files/bin/git.cmd.com"
+      - "C:/Program Files/bin/git.cmd.exe"
+      - "C:/Program Files/bin/git.cmd"
+      - "C:/Program Files/sbin/git.cmd.com"
+      - "C:/Program Files/sbin/git.cmd.exe"
+      - "C:/Program Files/sbin/git.cmd"
+      - "C:/Program Files/git.cmd.com"
+      - "C:/Program Files/git.cmd.exe"
+      - "C:/Program Files/git.cmd"
+      - "C:/Program Files (x86)/bin/git.cmd.com"
+      - "C:/Program Files (x86)/bin/git.cmd.exe"
+      - "C:/Program Files (x86)/bin/git.cmd"
+      - "C:/Program Files (x86)/sbin/git.cmd.com"
+      - "C:/Program Files (x86)/sbin/git.cmd.exe"
+      - "C:/Program Files (x86)/sbin/git.cmd"
+      - "C:/Program Files (x86)/git.cmd.com"
+      - "C:/Program Files (x86)/git.cmd.exe"
+      - "C:/Program Files (x86)/git.cmd"
+      - "C:/Program Files/CMake/bin/git.cmd.com"
+      - "C:/Program Files/CMake/bin/git.cmd.exe"
+      - "C:/Program Files/CMake/bin/git.cmd"
+      - "C:/Program Files/CMake/sbin/git.cmd.com"
+      - "C:/Program Files/CMake/sbin/git.cmd.exe"
+      - "C:/Program Files/CMake/sbin/git.cmd"
+      - "C:/Program Files/CMake/git.cmd.com"
+      - "C:/Program Files/CMake/git.cmd.exe"
+      - "C:/Program Files/CMake/git.cmd"
+      - "C:/Program Files (x86)/HLSLDecompiler/bin/git.cmd.com"
+      - "C:/Program Files (x86)/HLSLDecompiler/bin/git.cmd.exe"
+      - "C:/Program Files (x86)/HLSLDecompiler/bin/git.cmd"
+      - "C:/Program Files (x86)/HLSLDecompiler/sbin/git.cmd.com"
+      - "C:/Program Files (x86)/HLSLDecompiler/sbin/git.cmd.exe"
+      - "C:/Program Files (x86)/HLSLDecompiler/sbin/git.cmd"
+      - "C:/Program Files (x86)/HLSLDecompiler/git.cmd.com"
+      - "C:/Program Files (x86)/HLSLDecompiler/git.cmd.exe"
+      - "C:/Program Files (x86)/HLSLDecompiler/git.cmd"
+      - "C:/Users/bosonhuang/AppData/Local/Atlassian/SourceTree/git_local/bin/git.cmd.com"
+      - "C:/Users/bosonhuang/AppData/Local/Atlassian/SourceTree/git_local/bin/git.cmd.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Atlassian/SourceTree/git_local/bin/git.cmd"
+      - "C:/Windows/System32/git.com"
+      - "C:/Windows/System32/git.exe"
+      - "C:/Windows/System32/git"
+      - "C:/Windows/git.com"
+      - "C:/Windows/git.exe"
+      - "C:/Windows/git"
+      - "C:/Windows/System32/wbem/git.com"
+      - "C:/Windows/System32/wbem/git.exe"
+      - "C:/Windows/System32/wbem/git"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/git.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/git.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/git"
+      - "C:/Windows/System32/OpenSSH/git.com"
+      - "C:/Windows/System32/OpenSSH/git.exe"
+      - "C:/Windows/System32/OpenSSH/git"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/git.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/git.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/git"
+      - "C:/Program Files/dotnet/git.com"
+      - "C:/Program Files/dotnet/git.exe"
+      - "C:/Program Files/dotnet/git"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/git.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/git.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/git"
+      - "C:/Program Files/Perforce/git.com"
+      - "C:/Program Files/Perforce/git.exe"
+      - "C:/Program Files/Perforce/git"
+      - "C:/Program Files/CMake/bin/git.com"
+      - "C:/Program Files/CMake/bin/git.exe"
+      - "C:/Program Files/CMake/bin/git"
+      - "C:/Program Files/TortoiseSVN/bin/git.com"
+      - "C:/Program Files/TortoiseSVN/bin/git.exe"
+      - "C:/Program Files/TortoiseSVN/bin/git"
+      - "C:/ProgramData/chocolatey/bin/git.com"
+      - "C:/ProgramData/chocolatey/bin/git.exe"
+      - "C:/ProgramData/chocolatey/bin/git"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/git.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/git.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/git"
+      - "C:/Users/bosonhuang/.cargo/bin/git.com"
+      - "C:/Users/bosonhuang/.cargo/bin/git.exe"
+      - "C:/Users/bosonhuang/.cargo/bin/git"
+      - "C:/Users/bosonhuang/AppData/Local/Microsoft/WindowsApps/git.com"
+      - "C:/Users/bosonhuang/AppData/Local/Microsoft/WindowsApps/git.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Microsoft/WindowsApps/git"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/CodeBuddy CN/bin/git.com"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/CodeBuddy CN/bin/git.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/CodeBuddy CN/bin/git"
+      - "C:/Users/bosonhuang/.dotnet/tools/git.com"
+      - "C:/Users/bosonhuang/.dotnet/tools/git.exe"
+      - "C:/Users/bosonhuang/.dotnet/tools/git"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/Microsoft VS Code/bin/git.com"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/Microsoft VS Code/bin/git.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Programs/Microsoft VS Code/bin/git"
+      - "C:/Users/bosonhuang/AppData/Local/Python/bin/git.com"
+      - "C:/Users/bosonhuang/AppData/Local/Python/bin/git.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Python/bin/git"
+      - "C:/Users/bosonhuang/AppData/Local/Android/platform-tools/git.com"
+      - "C:/Users/bosonhuang/AppData/Local/Android/platform-tools/git.exe"
+      - "C:/Users/bosonhuang/AppData/Local/Android/platform-tools/git"
+      - "C:/Program Files/Lightbox/apps/blade_thm/git.com"
+      - "C:/Program Files/Lightbox/apps/blade_thm/git.exe"
+      - "C:/Program Files/Lightbox/apps/blade_thm/git"
+      - "C:/Users/bosonhuang/AppData/Local/UnrealGameSync/Latest/git.com"
+      - "C:/Users/bosonhuang/AppData/Local/UnrealGameSync/Latest/git.exe"
+      - "C:/Users/bosonhuang/AppData/Local/UnrealGameSync/Latest/git"
+      - "C:/Users/bosonhuang/AppData/Local/UGit/app-5.52.0/resources/app/git/cmd/git.com"
+    found: "C:/Users/bosonhuang/AppData/Local/UGit/app-5.52.0/resources/app/git/cmd/git.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Perforce\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\TortoiseSVN\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Users\\bosonhuang\\.cargo\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Programs\\CodeBuddy CN\\bin"
+        - "C:\\Users\\bosonhuang\\.dotnet\\tools"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\Android\\platform-tools"
+        - "C:\\Program Files\\Lightbox\\apps\\blade_thm"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\UnrealGameSync\\Latest"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\UGit\\app-5.52.0\\resources\\app\\git\\cmd"
+        - "C:\\Users\\bosonhuang\\AppData\\Local\\UGit\\bin"
+        - "C:\\Users\\bosonhuang\\AppData\\Roaming\\com.tencent.with\\embedded-cli\\current\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/HLSLDecompiler"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/HLSLDecompiler"
+...

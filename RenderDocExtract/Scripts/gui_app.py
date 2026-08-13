@@ -75,7 +75,7 @@ class RenderDocExtractGUI(tk.Tk):
         for col in range(8):
             advanced.columnconfigure(col, weight=1)
 
-        self._var("step_timeout", "300")
+        self._var("step_timeout", "1800")
         ttk.Label(advanced, text="Step Timeout").grid(row=0, column=0, sticky="w")
         ttk.Entry(advanced, textvariable=self.vars["step_timeout"], width=10).grid(row=0, column=1, sticky="w", padx=(4, 14))
 

@@ -1,2 +1,2 @@
-py Scripts\gui_app.py
+python Scripts\gui_app.py
 pause

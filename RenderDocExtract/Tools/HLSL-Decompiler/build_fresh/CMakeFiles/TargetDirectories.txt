@@ -1,0 +1,6 @@
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/dxil_spirv_external.dir
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/spirv_cross_external.dir
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/dxcompiler_external.dir
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/HLSLDecompiler.dir
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/ALL_BUILD.dir
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/ZERO_CHECK.dir

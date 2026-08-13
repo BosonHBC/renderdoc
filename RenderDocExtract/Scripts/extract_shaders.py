@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Extract VS/PS shader raw bytes, disassembly, optional HLSL, and signatures."""
+"""Extract VS/PS/CS shader raw bytes, disassembly, optional HLSL, and signatures."""
 
 import argparse
 import json
@@ -13,20 +13,23 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Sequence, Tuple
 
-PROJECT_ROOT = Path("D:/UGit/renderdoc/RenderDocExtract")
-SCRIPT_DIR = PROJECT_ROOT / "Scripts"
-OUTPUT_ROOT = PROJECT_ROOT / "Output"
-LOG_DIR = PROJECT_ROOT / "Logs"
-TEST_DIR = PROJECT_ROOT / "Tests"
 DEFAULT_RDC = Path("D:/PTGameDoc/TLUS2/Pix/TLUS2-PIX/WuKong_Forest0/build/RDC/WuKong_Forest1.rdc")
 DEFAULT_EID = 7643
 DEFAULT_DECOMPILER = Path("D:/PTGameDoc/TLUS2/Pix/TLUS2-PIX/tools/hlsl_decompiler/HLSLDecompiler.exe")
 SCRIPT_NAME = Path(globals().get("__file__", "extract_shaders.py")).stem
 
-if str(SCRIPT_DIR) not in sys.path:
-    sys.path.insert(0, str(SCRIPT_DIR))
 
+import inspect as _inspect
+_SCRIPT_FILE = _inspect.currentframe().f_code.co_filename
+_SCRIPT_DIR = str(Path(_SCRIPT_FILE).resolve().parent)
+if _SCRIPT_DIR not in sys.path:
+    sys.path.insert(0, _SCRIPT_DIR)
 import app_config  # noqa: E402
+PROJECT_ROOT = app_config.PROJECT_ROOT
+SCRIPT_DIR = PROJECT_ROOT / "Scripts"
+OUTPUT_ROOT = PROJECT_ROOT / "Output"
+LOG_DIR = PROJECT_ROOT / "Logs"
+TEST_DIR = PROJECT_ROOT / "Tests"
 import library_db  # noqa: E402
 import rd_session  # noqa: E402
 from gbuffer_layout_match import DEFAULT_LAYOUTS, match_gbuffer_layout  # noqa: E402
@@ -289,9 +292,14 @@ def extract_shader_stage(
     disasm_path = stage_dir / f"{stage_label}_{digest[:16]}.disasm.txt"
     hlsl_path = stage_dir / f"{stage_label}_{digest[:16]}.hlsl"
 
+    if not raw_bytes:
+        raise RuntimeError(f"{stage_label} shader reflection contains no raw bytecode")
     if not raw_path.exists():
         raw_path.write_bytes(raw_bytes)
-    pipeline_id = pipe.GetGraphicsPipelineObject()
+    if stage_label == "CS":
+        pipeline_id = pipe.GetComputePipelineObject()
+    else:
+        pipeline_id = pipe.GetGraphicsPipelineObject()
     disasm_target, disasm = disassemble_shader(controller, pipeline_id, refl, logger)
     if not disasm_path.exists():
         disasm_path.write_text(disasm, encoding="utf-8", errors="replace")
@@ -373,7 +381,11 @@ def extract_shaders(args: argparse.Namespace, logger: logging.Logger, log_path: 
             "warnings": [],
         }
 
-        stages = [("VS", rd.ShaderStage.Vertex), ("PS", rd.ShaderStage.Pixel)]
+        stages = [
+            ("VS", rd.ShaderStage.Vertex),
+            ("PS", rd.ShaderStage.Pixel),
+            ("CS", rd.ShaderStage.Compute),
+        ]
         for label, stage in stages:
             try:
                 extracted = extract_shader_stage(
@@ -397,6 +409,8 @@ def extract_shaders(args: argparse.Namespace, logger: logging.Logger, log_path: 
                 result["shaders"][label.lower()] = None
                 result["warnings"].append(f"{label} extraction failed: {exc}")
 
+        extracted_stages = [label for label in ("vs", "ps", "cs") if result["shaders"].get(label)]
+        result["extracted_stages"] = extracted_stages
         result["elapsed_seconds"] = round(time.perf_counter() - start, 3)
         args.test_log.parent.mkdir(parents=True, exist_ok=True)
         with args.test_log.open("w", encoding="utf-8") as f:
@@ -404,8 +418,8 @@ def extract_shaders(args: argparse.Namespace, logger: logging.Logger, log_path: 
             f.write("\n")
         logger.info("Wrote shader extraction test log: %s", args.test_log)
 
-        if not result["shaders"].get("vs") or not result["shaders"].get("ps"):
-            raise RuntimeError("VS/PS extraction did not both succeed")
+        if not extracted_stages:
+            raise RuntimeError("No VS, PS, or CS shader could be extracted at this EID")
         return result
     finally:
         if controller is not None or cap is not None:
@@ -425,7 +439,7 @@ def parse_args(argv: Optional[Sequence[str]] = None) -> argparse.Namespace:
 
     parser = argparse.ArgumentParser(
         prog=SCRIPT_NAME,
-        description="Extract VS/PS shaders for one RenderDoc EID.",
+        description="Extract VS/PS/CS shaders for one RenderDoc EID.",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
     parser.add_argument("--rdc", type=Path, default=default_rdc, help="Path to .rdc capture.")

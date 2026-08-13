@@ -1,0 +1,9 @@
+# CMake generation dependency list for this directory.
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/vendor/DirectXShaderCompiler/tools/clang/CMakeLists.txt
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/vendor/DirectXShaderCompiler/tools/clang/include/clang/Basic/Version.inc.in
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/vendor/DirectXShaderCompiler/tools/clang/include/clang/Config/config.h.cmake
+C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeParseArguments.cmake
+C:/Program Files/CMake/share/cmake-4.3/Modules/FindLibXml2.cmake
+C:/Program Files/CMake/share/cmake-4.3/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-4.3/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-4.3/Modules/FindPkgConfig.cmake

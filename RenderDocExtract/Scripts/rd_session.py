@@ -16,18 +16,23 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Sequence, Tuple
 
-PROJECT_ROOT = Path("D:/UGit/renderdoc/RenderDocExtract")
 DEFAULT_TEST_RDC = Path(
     "D:/PTGameDoc/TLUS2/Pix/TLUS2-PIX/WuKong_Forest0/build/RDC/WuKong_Forest1.rdc"
 )
 DEFAULT_TARGET_EIDS = [7643, 7955]
-LOG_DIR = PROJECT_ROOT / "Logs"
-TEST_DIR = PROJECT_ROOT / "Tests"
 SCRIPT_NAME = Path(globals().get("__file__", "rd_session.py")).stem
 
-if str(PROJECT_ROOT / "Scripts") not in sys.path:
-    sys.path.insert(0, str(PROJECT_ROOT / "Scripts"))
+import inspect as _inspect
+_SCRIPT_FILE = _inspect.currentframe().f_code.co_filename
+_SCRIPT_DIR = str(Path(_SCRIPT_FILE).resolve().parent)
+if _SCRIPT_DIR not in sys.path:
+    sys.path.insert(0, _SCRIPT_DIR)
 import app_config  # noqa: E402
+PROJECT_ROOT = app_config.PROJECT_ROOT
+SCRIPT_DIR = PROJECT_ROOT / "Scripts"
+OUTPUT_ROOT = PROJECT_ROOT / "Output"
+LOG_DIR = PROJECT_ROOT / "Logs"
+TEST_DIR = PROJECT_ROOT / "Tests"
 
 
 def _now_string() -> str:
@@ -82,8 +87,8 @@ def add_renderdoc_module_paths(extra_paths: Sequence[str], logger: logging.Logge
 
     candidates.extend(
         [
-            Path("D:/UGit/renderdoc/x64/Release"),
-            Path("D:/UGit/renderdoc/x64/Release/obj/qrenderdoc/generated"),
+            Path("C:/LQTech/UGit/renderdoc/x64/Release"),
+            Path("C:/LQTech/UGit/renderdoc/x64/Release/obj/qrenderdoc/generated"),
             Path("C:/LQTech/RenderDoc_1.44_64"),
             Path("C:/Program Files/RenderDoc"),
         ]

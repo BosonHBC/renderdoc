@@ -1,0 +1,13 @@
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/vendor/SPIRV-Cross/CMakeFiles/spirv-cross-core.dir
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/vendor/SPIRV-Cross/CMakeFiles/spirv-cross-glsl.dir
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/vendor/SPIRV-Cross/CMakeFiles/spirv-cross-cpp.dir
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/vendor/SPIRV-Cross/CMakeFiles/spirv-cross-reflect.dir
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/vendor/SPIRV-Cross/CMakeFiles/spirv-cross-msl.dir
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/vendor/SPIRV-Cross/CMakeFiles/spirv-cross-hlsl.dir
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/vendor/SPIRV-Cross/CMakeFiles/spirv-cross-util.dir
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/vendor/SPIRV-Cross/CMakeFiles/spirv-cross-c.dir
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/vendor/SPIRV-Cross/CMakeFiles/spirv-cross.dir
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/vendor/SPIRV-Cross/CMakeFiles/RUN_TESTS.dir
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/vendor/SPIRV-Cross/CMakeFiles/INSTALL.dir
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/vendor/SPIRV-Cross/CMakeFiles/ALL_BUILD.dir
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/vendor/SPIRV-Cross/CMakeFiles/ZERO_CHECK.dir

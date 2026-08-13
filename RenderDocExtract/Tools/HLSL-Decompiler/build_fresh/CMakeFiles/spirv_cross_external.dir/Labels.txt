@@ -1,0 +1,13 @@
+# Target labels
+ spirv_cross_external
+# Source files and their labels
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/spirv_cross_external
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/55faadff5537a7f2afdf764fa0cf7501/spirv_cross_external.rule
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/ef0561050ba028aba93d007919bff406/spirv_cross_external-complete.rule
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/544c4f8d0ccfe901f7a107c905a1536c/spirv_cross_external-build.rule
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/544c4f8d0ccfe901f7a107c905a1536c/spirv_cross_external-configure.rule
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/544c4f8d0ccfe901f7a107c905a1536c/spirv_cross_external-download.rule
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/544c4f8d0ccfe901f7a107c905a1536c/spirv_cross_external-install.rule
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/544c4f8d0ccfe901f7a107c905a1536c/spirv_cross_external-mkdir.rule
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/544c4f8d0ccfe901f7a107c905a1536c/spirv_cross_external-patch.rule
+C:/LQTech/UGit/renderdoc/RenderDocExtract/Tools/HLSL-Decompiler/build_fresh/CMakeFiles/544c4f8d0ccfe901f7a107c905a1536c/spirv_cross_external-update.rule
